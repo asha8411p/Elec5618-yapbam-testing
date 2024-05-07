@@ -1,0 +1,1083 @@
+Next release	Known bug:	Known bugs:	Change:	Changes:	Bug fix:	Bug fixes:
+version	next
+known
+	When selecting a shortcut to a folder in the drop down menu of a file selection dialog, under java 1.6, Yapbam hangs.<br/>In fact, this is not a Yapbam bug, but a <a href="https://bugs.sun.com/bugdatabase/view_bug.do;jsessionid=518b010bce71d8547e0dfeee596a?bug_id=6550546">java1.6 bug</a>. The best way to fix the problem is use java 1.7.
+	On MacOS, The copy/paste shortcut is ctrl C/V and not Command C/V. Unfortunately, this is a bug in java JTextField and can't be fixed.
+	On windows, using other themes than Nimbus makes description and comment columns not to be correctly vertically aligned (seems to be a Java bug).
+
+version	0.21.3 (02/14/2023)
+fix
+	Creating a new Dropbox connection did not work anymore (Dropbox has stop delivering long-lived tokens used before).
+	Reading through network was very, very slow.
+	When changing the date in the dialog for generating periodic operations, an error could occur.
+	Application crashed on startup when set to Arabic.
+	Unintentionally, versions 0.21.0 to 0.21.2 were no longer compatible with java 1.6 and 1.7.
+
+version	0.21.2 (12/04/2021)
+improvement
+	Italian translation of license, contributors and help pages.
+fix
+	File/Import menu did not work anymore in versions 0.21.0+
+
+version	0.21.1 (11/28/2021)
+fix
+	Previous version crashed in language other than French and Italian.
+
+version	0.21.0 (11/26/2021)
+improvement
+	Adds alerts when checkbooks end.
+	Adds Html and JSon export format.
+	The statements can be exported.
+fix
+	The balance history export contained HTML encoded descriptions.
+	
+version	0.20.15 (07/25/2021)
+fix
+	When you disconnected a screen after exiting the application, the application window could be, at startup, outside the remaining screens.
+	The file selection dialogs (open, save or export) did not work with Java >= 16.
+	In the "Administration / Periodic transactions management" tab, when a filter was activated (and the "ignore filter" button was not checked) editing / deletion, etc... was not performed on the selected operation.
+
+version	0.20.14 (09/14/2020)
+fix
+	The tooltip of the export button in "Balance history/Transactions" tab was not an understandable sentence.
+	Some fixes in Italian translation.
+
+version	0.20.13 (05/09/2020)
+improvement
+	Italian translation is complete.
+
+version	0.20.12 (02/25/2020)
+fix
+	Updates Dropbox libraries to restore the ability to save data to Dropbox.
+
+version	0.20.11 (02/21/2020)
+improvement
+	Adds Dutch translation.
+fix
+	Fixes selection problem of Edited/Deleted/Duplicated filter in "Administration/Filter" tab.
+	Fixes some Italian translations.
+
+version	0.20.10 (05/19/2019)
+improvement
+	Adds/fixes translations into Italian and Portuguese.
+
+version	0.20.9 (11/11/2018)
+fix
+	Fixes a major bug preventing the backup of new files in Dropbox. 
+
+version	0.20.8 (11/10/2018)
+fix
+	Fixes a major bug preventing the backup of new files in Dropbox. 
+	Fixes a bug, or rather a regression of java version 1.8.111+, which by default forbids the use of proxy with basic authentication. 
+	Fixes minor display bugs.
+
+version	0.20.7 (10/15/2018)
+improvement
+	Removes Yahoo currency converter data source (Yahoo has stopped this service).
+fix
+	News are available again with java 1.6 et 1.7.
+
+version	0.20.6 (06/16/2018)
+improvement
+	Adds translation into Greek.
+	German translation is complete. 
+
+version	0.20.5 (03/25/2018)
+fix
+	The "Rename" button in "Account statements" tab renamed not only the selected statements, but also statements with the same name in other accounts.
+	When declaring the file to open as an argument of Yapbam application, the previous filter was never restored. 
+
+version	0.20.4 (01/28/2018)
+improvement
+	Arabic translation is now complete.
+	Adds more translations into Italian and some into Japanese. 
+
+version	0.20.3 (01/07/2018)
+improvement
+	Spanish translation is now complete.
+	Adds more translations into Polish and some into Arabic. 
+fix
+	Clicking on a cell of the postponed column in the "Generate periodical transactions" did not selected the line. Under Debian 9.3, it resulted in an error.
+
+version	0.20.2 (12/24/2017)
+improvement
+	Adds more translations into Spanish.
+fix
+	Fixes wrong end date in filter when filtering through "Budget-> Filter".
+
+version	0.20.1 (12/22/2017)
+improvement
+	Translation in Turkish almost complete. Adds partial translations into Spanish and Hungarian.
+
+version	0.20.0 (12/10/2017)
+improvement
+	Adds the ability use transaction's value date in budget tab.
+	Adds the ability to save user defined filters.
+fix
+	Using Java 9, some amounts where detected as invalid (for instance "50,00 &euro;" in France).
+
+version	0.19.8 (10/28/2017)
+fix
+	Reading an encrypted file using Java 9 resulted in an error.
+
+version	0.19.7 (10/08/2017)
+fix
+	Currency converter of previous versions was broken because Yahoo rates provider's URL changed.
+
+version	0.19.6 (07/09/2017)
+fix
+	Switches to Dropbox SDK version 3.0.3 that fixes some bugs.
+
+version	0.19.5 (06/11/2017)
+fix
+	Selecting a statement in the "customized filters" dialog then selecting menu "Filter/Unchecked transactions" resulted in an error.
+
+version	0.19.4 (03/05/2017)
+improvement
+	Adds the ability to scroll the list of accounts in the "Filter" menu when there are too many.
+	Adds more translation into Italian.
+	Adds more translations into Russian.
+
+version	0.19.3 (02/18/2017)
+improvement
+	Introduces partial translation into Italian.
+	Adds more translations into Russian.
+
+version	0.19.2 (12/31/2016)
+improvement
+	Introduces partial translation into Polish.
+fix
+	Connect to a new Dropbox account with 0.19.0 or 019.1, with a language not set to French, resulted in an error.
+
+version	0.19.1 (12/11/2016)
+fix
+	Connect to a new Dropbox account with 0.19.0 resulted in an error.
+
+version	0.19.0 (12/10/2016)
+improvement
+	Compatibility with version 2 of Dropbox API (Dropbox will stop supporting previous versions on 6/28/2017).
+	Adds more translations into Russian.
+fix
+	Yapbam team messages were no longer displayed when Yapbam was launched from a Java version earlier than 1.8.0_101.
+	Yapbam is now able to follow http to https redirections while getting team messages or checking for updates.
+	
+version	0.18.11 (11/06/2016)
+improvement
+	Adds translations into Russian.
+
+version	0.18.10 (06/05/2016)
+fix
+	In the calendar popups, selecting a date more than 20 years in the future resulted in a date in the past (ie 2050 was converted in 1950).
+
+version	0.18.9 (03/06/2016)
+fix
+	It was possible to validate the custom filter dialog with the "Checked transactions" check box checked and not radio button selected. This resulted in an error when clicking the "Validate" button if statement field was not empty. 
+improvement
+	Add the ability to display the net balances in the "Statistics"/"receipts/expenses" tab.
+	
+version	0.18.8 (01/31/2016)
+fix
+	Transaction's comment containing links to files or web pages where sometimes decoded wrong.
+	Fixes buttons alignment in administration tab.
+	Fixes menu items when data is quite empty (no account created, but some categories or category separator).
+
+version	0.18.7 (12/28/2015)
+fix
+	The background colors of cells in the tab "Account statements" were incorrect when the lines were sorted.
+	Fixes vertical alignment of description and comment columns for Nimbus theme (and improves it with other themes - see known bugs).
+improvement
+	Archived transactions can now be restored back.
+	Adds the ability to enter date <i>x</i> days, month, year in the future typing +x, ++x, +++x in the field (respectively -x, --x, --x for x days/months,years in the past).
+
+version	0.18.6 (11/29/2015)
+fix
+	Some filters where not recovered at startup (example: filter checked transactions).
+improvement
+	Transaction's comment can now contains links to files or web pages.
+	The table's columns displaying the generated periodical transactions are now sized according to their content.  
+
+version	0.18.5 (10/11/2015)
+improvement
+	Periodical transactions can be filtered in the "Administration/Periodical Transactions Management" tab.
+	Adds a summary of displayed transactions in the "Administration/Periodical Transactions Management" tab.
+
+version	0.18.4 (09/20/2015)
+improvement
+	Adds a summary of displayed transactions in the "Transactions" tab.
+
+version	0.18.3 (07/12/2015)
+fix
+	Updates currency converter in order to comply with changes in Yahoo web service (US dollar is no more represented like other currencies in that web service).
+
+version	0.18.2 (05/25/2015)
+fix
+	When an transaction was edited in the table of "Balance History" table and the transactions were sorted from newest to oldest, the selected transaction after edition was not the one edited.
+improvement
+	Dialogs can now be closed with the escape key.
+	Adds partial translations into Russian and Dutch.
+
+version	0.18.1 (02/22/2015)
+fix
+	Removes "Mac OS X" theme. A Java bug prevented this theme from functioning properly (It was impossible to save data in a new file).
+improvement
+	Adds a "Messages" area in the main window that displays messages from the Yapbam team (Warning on obsolete java version, request for help, ...)
+
+version	0.17.11 (02/08/2015)
+fix
+	Bug introduced in 0.17.8: Filter menu was always hidden when the selected tab at startup was "Accounts summary", "Account statements" or "Administration".
+
+version	0.17.10 (01/17/2015)
+fix
+	Bug introduced in 0.17.8: Editing a transaction changed its value date, sometime its number or its statement id.
+
+version	0.17.9 (01/11/2015)
+fix
+	In the "Balance history/Transactions" tab, receipts were not processed before expenses. This led to false alerts.
+improvement
+	Adds ability to hide the intermediate balances in the "Operations" table of the "History of the balance" tab.
+
+version 0.17.8 (01/04/2015)
+fix
+	When selecting a predefined label in the sub-transaction creation dialog, the receipt box was systematically checked.
+	When entering transactions in bulk mode, for an operation other than the first, when we chose a predefined label involving the use of a checkbook, check number was not filled.
+	When saving a file to a folder where user did not permission to delete files, an error occurred after the file was saved.
+	In the "Balance history" tab, when switching from one account to another via the filter menu, the vertical scale was sometimes not properly updated.
+improvement
+	Adds partial translations into Turkish and Traditional Chinese.
+
+version	0.17.7 (11/10/2014)
+fix
+	When you tried to enter the formula 1/0.5 in the calculator, an error occurred when you typed the zero.
+	When Yapbam was installed in a write protected folder, it was impossible to clear some preferences (The proxy settings, for instance).
+
+version	0.17.6 (10/20/2014)
+fix
+	yapbam.sh not worked anymore on MacOS since 0.17.4.
+
+version	0.17.5 (10/14/2014)
+improvement
+	Adds a confirm dialog when creating a new data file.
+fix
+	Sometimes, when creating bulk transactions, the value date was not automatically set when you selected a predefined description.
+
+version	0.17.4 (09/13/2014)
+improvement
+	The font can be selected in the preference dialog.
+fix
+	Some minor bugs related to filtering on transaction's comment.
+	Problem to launch application with yapbam.sh through a symbolic link on some Linux flavors.
+
+version	0.17.3 (06/17/2014)
+improvement
+	The transfer creation dialog now allows you to edit the description and comment of the transactions.
+fix
+	Bug introduced in 0.17.2: Create a new transfer while balance history chart was displayed caused an error. 
+
+version	0.17.2 (06/09/2014)
+improvement
+	The selected account when creating a transaction account is now context sensitive. For example, when in the "Account Statements" tab, and you create a transaction, the selected account is the statement's one.
+	When creating a new transfer, the destination account is now pre-selected according to its probability in the history of transfers.
+	Press the "Shift" key when selecting an account in the "Filter" menu removes the account from the filter.
+fix
+	Bug introduced in 0.17.0: When you imported a file for the very first time, it was possible to launch the import without specifying the correspondences between the columns of the imported file and the attributes of transactions. The import then ended with an error.
+
+version	0.17.1 (06/01/2014)
+improvement
+	The number of transactions per account is moved from the account administration panel to the account summary. This panel now displays the total number of transactions. 
+	Adds a column containing the number of unchecked transactions the "Accounts summary" tab.
+fix
+	Bug introduced in 0.17.0: Importing a file with empty cells in the "amount" column caused an error.
+
+version	0.17.0 (05/01/2014)
+improvement
+	It is now possible to select the decimal separator in the import dialog. Amounts preceded by a + are now accepted.
+	By default, the selected account in the "Account Statements" tab is now the one selected in the filter.
+	The transaction editing wizard can now suggest the amount (adjustable behavior in the preferences). 
+	The transaction editing wizard is now disabled when editing an existing transaction. This avoids inadvertently change the method of payment or the amount while changing the description.
+fix
+	Under Swing look and feel, the background color of "Linked to" column was wrong in import dialog.
+	When the user confirmed the archiving in a standard file (not an archive file), it caused an error.
+	
+version	0.16.10 (04/25/2014)
+fix
+	With some themes, in the "Balance History" tab, the date was not in the right format and has not the same background color as the rest of the line.
+improvement
+	In the balance history table and in the "Account statements" tab, the columns have now the same alignment as in the transactions table (amounts to the right, description to the left, the rest remains centered).
+
+version	0.16.9 (04/22/2014)
+fix
+	Bug introduced in 0.16.8: Depending on preference settings, performing a sort in the administration tab of periodic transactions on the "comment" column could cause an error.
+
+version	0.16.8 (04/21/2014)
+fix
+	In the subtransaction editing dialog, an error occurred when you selected a predefined description after having the amount cleared.
+	Workaround to a java 8 bug that caused Yapbam to hang after closing on some Linux systems.
+	The selection color of transactions table in the "History of balance" tab was wrong when this table used same background colors as the "Operations" tab.
+	Sometimes when appearance preferences were changed, the balance history chart was wrong and Yapbam became very slow.
+improvement
+	The transactions table of the "Balance history" tab can now display expenses and receipts in separate columns.
+	The setting that allow to separate receipt/expense columns in the "Transactions" tab is reused in the periodical transactions table of the "Administration" tab.
+
+version	0.16.7 (04/06/2014)
+fix
+	The "undefined" category was ignored when selected in the custom filter dialog.
+	Bug introduced in 0.16.6: Transactions with "Undefined" category were always ignored when using category filtering.
+	Workaround for a Java 8 bug that caused an error when opening the dialog for creating periodic transaction.
+	When the "Next" button was clicked in the "New bulk transactions" dialog, the statement field was never filled, even when in the "Auto fill the statement id" option was selected in the preferences.
+	When editing a subtransaction, selecting a predefined label set the amount to 0.
+improvement
+	Accounts are now alphabetically sorted "Account statements" tab's menu.
+
+version	0.16.6 (03/20/2014)
+improvement
+	Accounts are now alphabetically sorted in filter menu and transaction creation/edition dialogs.
+fix
+	The alphabetical sort of categories is now correct (example : a is before B). 
+
+version	0.16.5 (03/09/2014)
+improvement
+	Tools (calculator and currency converter) can now be used in dialogs (for example while editing a transaction).
+	In the currency converter, the selected currencies are remember if you close the restart the application. The currency table may now be hidden to reduce the window size.
+fix
+	Trying to save data in a write protected file could, sometime cause an error.
+	
+version	0.16.4 (03/01/2014)
+fix
+	Some minor bugs in balance history tab.  
+	In preference dialog, removing the separate "comment" column from the transactions list caused an error when this column was a sort key of the list.
+
+version	0.16.3 (02/26/2014)
+fix
+	Setting the separator to " or \ in the import dialog caused an error. 
+improvement
+	It is now possible to run the application directly with the command java -jar path/App/yapbam.jar (path is the installation directory of Yapbam).
+	Adds the ability to zoom on the balance history graphic.
+	
+version	0.16.2 (01/18/2014)
+fix
+	Excluding some accounts in the "account summary" tab when table was sorted resulted in wrong amounts in the "Total" line.
+
+version	0.16.1 (01/18/2014)
+fix
+	Failure of Dropbox services (ex: Http error 500) caused an error in the application.
+improvement
+	Adds the ability to exclude some accounts from the total line of the "account summary" tab.
+
+version	0.16.0 (12/26/2013)
+fix
+	Some wordings in English and Portuguese versions.
+	The table in the appearance setting of the transactions table was incorrect when the font size was not 12.
+	When the description, category, etc ... of an operation or a sub-transaction was greater than its column in a transactions table, the display was incorrect when sub-transactions were displayed.
+	The title of the last two columns of the currency converter were erroneous.
+improvement
+	Adds the ability to archive old transactions.
+	The background color of "Balance History" tab can be set in the preferences dialog.
+	Adds the ability to display amount of receipts and expenses in separate columns in the "Transactions" tab.
+	In the currency converter, the list of countries using a currency appears when you hover over it in the currency table.
+	Adds a currency rate source from Yahoo to the currency converter. It adds a lot of currencies. 
+
+version	0.15.5 (10/19/2013)
+fix
+	Menu shortcuts used the CTRL key on Macintosh (instead of "Apple" key).
+	A bug in the encryption of password protected files made it impossible to decrypt on Android (Android application is under development).
+improvement
+	In the "Transactions" table of "Balance History" tab, lines triggering alerts are now highlighted in red.
+	Several speed improvements.
+	Better handling of unsupported file format (especially, future versions of encoded files will be detected as non supported instead of corrupted).
+
+version	0.15.4 (06/09/2013)
+fix
+	Bug introduced in 0.15.3: The "Custom Filter" dialog was not displayed properly on small screens.
+	The line spacing in the dialog "Generate periodical transactions" was incorrect when the font was not the default one.
+
+version	0.15.3 (06/02/2013)
+improvement
+	Adds, in check mode of the "Account Statements" tab, a field for entering the final statement balance. Once this is defined, the final balance displays its gap with the target.
+fix
+	Trying to link to a new Dropbox account behind a authenticated proxy, with bad authentication data set in preferences caused an error.
+	When "Operations" was the first tab, the menu "File / Print..." was grayed out at startup. Changing tab and come back to "Operations" fixed the problem. 
+
+version	0.15.2 (05/20/2013)
+fix
+	The behavior of Yapbam while reading unknown format file was very bad. In extreme cases this could lead to the destruction of data.
+
+version	0.15.1 (05/11/2013)
+fix
+	Importing CSV files whose cells were delimited by double quotes did not work.
+	CSV exported files were not correctly encoded when cells contain cell separator or double quotes.
+
+version	0.15.0 (04/27/2013)
+fix
+	Opening a deleted file with the "File/Recent file" menu caused an error. 
+improvement
+	Yapbam is able to be connected to a Dropbox account in order to share data across Internet and backup it through built-in Dropbox functions.
+	To help maintain Yapbam uptodate, verifying the presence of updates is systematically enforced once a month.
+	Adds a checkbox "Ignore end date" in the "History of the balance" tab. When this box is not checked, the zoom of the graph is set according to the range of date of values ​allowed by the filter.
+
+version	0.14.5 (03/24/2013)
+fix
+	The menu "File / Recent Files" was disabled at Yapbam launch when no file was open.
+	Some Portuguese and German translations were wrong.
+improvement
+	In the "Transactions" tab, column "S/T", which displays or hide the sub-transactions, now has a fixed size.
+
+version	0.14.3 (02/24/2013)
+improvement
+	Adds a button to rename the statements in the "Account Statements" tab.
+fix
+	In the creation/edition of checkbook dialog, use the up arrow to increment the check numbers caused an error.
+	While launching the application, if the last opened file was protected with password, click on "Cancel" in the dialog asking for the password caused an error.
+
+version	0.14.2 (02/04/2013)
+fix
+	Workaround for a Java bug that caused an error under Java 1.7.0_13 when opening the dialog for creating periodic transaction.
+
+version	0.14.1 (02/03/2013)
+improvement
+	Adds a button to swap the currencies in the currency converter.
+	In the calculator, the result is now selectable and can be copied with the standard shortcut (Windows <CTRL-C>).
+fix
+	Type a comma as the first character of an amount input field caused an error.
+
+version	0.14.0 (02/01/2013)
+improvement
+	Yapbam font size is now editable (only with "Nimbus" look and feel).
+	Adding a field "Notes" in the accounts, visible in the "Accounts summary" tab.
+fix
+	In the "Budget" tab, selecting the total cell of an already selected line didn't grayed out the "Filter" button. Click on it caused an error.
+	An error occurred when we chose the menu "File/New" while editing a category in the "Administration/Categories" tab.
+
+version	0.13.6 (01/15/2013)
+fix
+	File selector dialog could hang when using "Windows", "Windows classic" and "CDE Motif" appearences.
+
+version	0.13.4 (01/13/2013)
+fix
+	Memory management problems that can result in slowing down Yapbam and errors in extreme cases.
+	Trying to read or write protected files caused errors.
+	Regression: When selecting a shortcut (symbolic link) in a file selection dialog, Yapbam did not follow the link to read/save the target file, but directly read/saved the shortcut file. 
+
+version	0.13.3 (01/02/2013)
+fix
+	Versions before 0.12.0 allowed to create recurring transactions without information on the periodicity. It was an anomaly. The following versions of Yapbam no longer allowed to read files containing such operations, which was ... a disaster.
+	The "Customized filter" dialog was not initialized according to the current filter when this filter already defined restrictions on value date.
+
+version	0.13.2 (12/22/2012)
+fix
+	Ramdom crashes when exiting without saving a new file.
+	Ramdom crashes when exiting after opening the calculator.
+	
+version	0.13.1 (12/11/2012)
+fix
+	When Yapbam was installed in a write protected folder or in a folder protected by <a href="http://en.wikipedia.org/wiki/User_Account_Control">Windows UAC windows</a>, and a periodic transaction was edited, quitting Yapbam caused an error.
+	When editing periodical transaction, it was possible to validate a not activated transaction with an end date before the next deadline. This caused an error.
+	Rounding errors in the calculator.
+	
+version	0.13.0 (12/09/2012)
+improvement
+	Adds a calculator in the "Tools" menu.
+	It is now possible to enter a formula in the amount fields (example 3*45 instead of 135).
+fix
+	The menu "Transactions/Convert to periodical transaction" caused an error.
+
+version	0.12.1 (12/03/2012)
+fix
+	Bug of version 0.12.0: When a periodical transaction reaches its end date, an error occurs.
+
+version	0.12.0 (12/02/2012)
+fix
+	It was possible to create a periodical transaction with a next transaction's date after the end date of the periodical transaction.
+	When canceling an transaction in the generation of periodic transactions, or altering its amount, the summary of the generated amounts (line below the list of generated transactions) was not updated.
+	When changing the order of columns in the tab "Account Summary", the "Total" row remained frozen.
+	Changing the case of a letter in an account's name caused an error.
+	Closing Yapbam caused an error when the filter had a restriction on the number or statement, but not on the description of transactions.
+improvement
+	The periodical transactions generation dialog is now resizable. The transaction table can be sorted, and a button edits the selected transaction. Transaction can be postponed.
+	The "Transactions" table of the "Balance History" tab can now be sorted from the newest transaction to the oldest.
+
+version	0.11.11 (11/17/2012)
+fix
+	In the custom filter, enter a value in the "Checking" field and then uncheck "Checked transactions" caused an error while validating the dialog.
+	While editing a periodic transaction, change the frequency of a monthly transaction to daily, and switch back to monthly caused an error.
+	When the selected appearance in "File/Preferences/Appearance" was not "Nimbus", the amounts were not correctly formatted in the "Account Statements" tab, and dates were not displayed in the same format as the other tabs.
+
+version	0.11.10 (11/06/2012)
+fix
+	A bug introduced in the 0.11.9: When you selected the menu "File/New" and the current data was not saved and you choose to save the data in the dialog that appeared, an error occurred.
+	When you removed or renamed the file imported between its selection and the import dialog validation, an error occurred. It could also happen when you removed lines then select the last line in the import dialog.
+
+version	0.11.9 (11/01/2012)
+fix
+	When the initial balance of an account was changed in the "Administration" tab, the change was not reported in the "Accounts summary" tab nor in the alerts of the "Balance history" tab. 
+	Check number changes when editing a transaction was sometimes ignored.
+	Passwords containing accents were not supported.
+	In the account management panel, when the account list was sorted, the delete button could delete an account that was not the selected one.
+	When a transaction's description contained a &lt; character, characters following the < did not appear in the "transactions" tab. 
+
+version	0.11.8 (09/18/2012)
+improvement
+	It is now possible to define sub-categories and view statistics and budget by grouping sub-categories of a category.
+fix
+	When clicking on the button "View a sample data file" of the welcome dialog, there was no warning if changes were not saved. In this case, changes were lost.
+	When Yapbam was installed in the directory "Programs" in Windows, import / export crashed.
+
+version	0.11.7 (09/09/2012)
+fix
+	Startup fails when Yapbam was installed in the "Programs" folder on Windows.
+	In the "Periodical transactions management" tab of the "Administration" tab, there was some spelling errors, and the background color of the "Active" column was wrong when table was sorted.
+	In the periodical transactions generation dialog, the date field was sometimes too small to display the date.
+improvement
+	It is now possible to create periodical transactions with a yearly period.
+
+version	0.11.6 (08/26/2012)
+fix
+	Some wordings in Portuguese and German versions were not translated. 
+
+version	0.11.5 (08/03/2012)
+improvement
+	The currency converter is now available offline. When offline, the last downloaded rates are used.
+fix
+	On systems that do not allow Yapbam to open a browser, clicking on the buttons to access frequently asked questions and the tutorial in the welcome screen resulted in an error. 
+
+version	0.11.4 (07/15/2012)
+fix
+	In the preference dialog, it was possible to enter a proxy server address containing the char ':'. This resulted in an error when opening the preference dialog again. This error prevents the user from being able to fix the proxy server name.
+	In the administration panel, deleting a category while editing it could resulted in errors.
+
+version	0.11.3 (06/06/2012)
+improvement
+	It's now possible to remember the row sorter keys of the tables across two Yapbam launches.
+	The rows of tables under "Accounts Management" part of "Administration" tab can now be sorted. It is the same for the "accounts summary".
+	It is now possible to delete a sort key in tables (by repeatedly clicking the column header that serves as sort key).
+	In the currency converter:<ul><li>the currency names and codes are now in separate columns.</li><li>Currency table can be sorted, by default it is sorted, as well as the menus in the order of names of currencies.</li><li>The target currency can be selected by clicking its row in the table.</li></ul>
+fix
+	In the currency converter, conversion rates were not displayed in the decimal format of the country (eg, in France, the point was used as decimal separator).
+	In the "Account statements" tab, the optional sort order of "Debt" and "Receipt" columns was alphabetical instead of numerical. 
+	Bugs introduced in 0.11.2:<ul><li>Opening a file protected by password, then clicking on "Cancel" in the password dialog, resulted in an error.</li><li>Reading a file that contained no transactions resulted in an error.</li><li>Under Linux, wait dialogs were systematically and briefly displayed in the corner of the screen while reading or writing data or while accessing the Internet</li></ul>
+
+version	0.11.2 (05/28/2012)
+improvement
+	The csv exports doesn't contain anymore thousands separators (Excel doesn't recognize strings with such separators as numbers).
+fix
+	In countries where space is the thousand separator (France, Sweden, ...), amounts including a space as thousand separator were rejected during import (This was due to a <a href="http://bugs.sun.com/view_bug.do?bug_id=4510618">java bug</a>).
+	
+version	0.11.1 (05/12/2012)
+fix
+	The periodical generation was broken in the 0.11.0 version.
+	
+version	0.11.0 (05/11/2012)
+improvement
+	Adds a  waiting message when the currency converter connects to the ECB.
+	Introduces a simpler, clearer (the current statement is displayed below the list of transactions to check) and more powerful (one can check multiple transactions at once, undo check, etc ...) check mode in the statement tab.
+
+version	0.10.2 (04/25/2012)
+improvement
+	Adds an item to "Transactions" menu to create tranfers between accounts.
+	Background colors of the transaction table can now be customized.
+fix
+	It was possible, in the "Budget" tab, to select total rows/columns. Then, click the "Filter" button resulted in an error.
+
+version	0.10.1 (04/02/2012)
+fix
+	Removes the backup preference tab (backup are not yet implemented)
+	An error occurred when validating the "Transaction editing" preferences while the customized automatic statement id field contained an invalid pattern.
+	When Yapbam was installed in a write protected folder or in a folder protected by <a href="http://en.wikipedia.org/wiki/User_Account_Control">Windows UAC windows</a>, as the folder "Program files", the currency converter did not work.
+	
+version	0.10.0 (03/30/2012)
+improvement
+	The budget view can now have sum column and line.
+
+version	0.9.13 (03/06/2012)
+fix
+	When Yapbam was installed in a write protected folder or in a folder protected by <a href="http://en.wikipedia.org/wiki/User_Account_Control">Windows UAC windows</a>, as the folder "Program files", error messages appeared when launching or quitting Yapbam and during updates.
+
+version	0.9.12 (02/12/2012)
+fix
+	When editing of subtransaction, clicking the check box "receipt" when the "amount" was empty caused an error.
+	Double-click on a some lists (for example in the transactions table) with the crtl key down could caused an error, or leave the edit/delete button enabled when no lines were selected in the list.
+	When editing a periodic transaction with an end date, moving from a daily to monthly transaction caused an error.
+	
+version	0.9.11 (01/25/2012)
+fix
+	When deleting the payment mode at the bottom the table in the account administration tab, the edit and delete bottom were not disabled. Clicking on them at this time caused an error.
+	When deleting an account, mode or category authorized by the filter, Yapbam went sometimes found in an inconsistent state. The display of the transaction creation dialog could end with an error.
+	When generating periodic operations, the end date of operations whose frequency was expressed in days was ignored.
+
+version	0.9.10 (01/09/2012)
+improvement
+	When an operation pointed is duplicated, the statement is emptied (unless the autofill function is set in the preferences dialog. In such a case, this field is automatically filed).
+fix
+	When you validated the Preferences dialog, Yapbam restarted automatically, even when it was not necessary.
+	The currency converter was not working when the selected language was German.
+
+version	0.9.9 (01/02/2012)
+improvement
+	Yapbam is now also available in German (a big thank you to Jean-Ren&eacute; Thies).
+	Adds a button "Generate periodic transactions" in the transactions table and in the "Periodical transactions" administration panel.
+fix
+	In the dialog for entering sub-transactions, we could validate an unlabeled sub-transaction by erasing the text and clicking quickly on the "Validate" button.
+	When entering an incorrect value in the "Customized" field of the "Transaction editing" tab of the preferences dialog, we had time to click the "Submit" button before it becomes disabled.
+	In some dialogs when clicking the "Validate" button during a date or amount field edition, the click did not closed the dialog.
+
+version	0.9.8 (12/18/2011)
+improvement
+	When creating mass transactions the date is now kept when you click the next button.
+fix
+	Some imported file separators (eg \) were not supported. Using such a separator led to a crash of the import file dialog.
+	Using account names, method of payment or categories that begin or end with spaces could cause crashes in the dialog for creating these objects.
+	The icons and warning messages (when the threshold of balance is exceeded or when there are periodic transactions to generate) were sometimes displayed on the wrong tab.
+	When selecting a shortcut (symbolic link) in a file selection dialog, Yapbam did not follow the link to read/save the target file, but directly read/saved the shortcut file.
+
+version	0.9.7 (11/13/2011)
+improvement
+	It is now possible to display relative balances in the transactions tab (you have to click a balance to make it the reference for other balances).
+	The components of the tab "operations" are rearranged. The buttons for creating / editing / deleting operations are now under the list, as in the lists in the "Administration". Adds button to create bulk operations.
+fix
+	Entering a transaction with a date before 1/1/1970 caused errors.
+	The filter was never saved when the data were not recorded before closing Yapbam's window.
+	Importing an empty file caused an error.
+	Click a help button caused a crash if java was unable to open a web browser.
+
+version	0.9.6 (10/23/2011)
+fix
+	Displaying the balance history of an account that a null initial balance and all its transaction's amount null resulted in an error.
+	In the wizard for entering sub-transactions: Select a wording that does not appeared in any transaction of the account of the edited transaction caused the wizard to crash.
+
+version	0.9.5 (10/16/2011)
+improvement
+	Safeguarding the filter between two Yapbam launches is available again for encrypted data files.
+	Added specific error messages on backup failure of the preferences or of startup state.
+fix
+	Under Windows, when the files in the data directory were hidden, the state and/or preferences were not saved. Similarly, the currency converter didn't work.
+
+version	0.9.4 (10/02/2011)
+fix
+	The export crashed when "comment" was in the exported fields.
+	Closing Yapbam under Java 1.7:  didn't exit the java virtual machine process.
+
+version	0.9.3 (09/25/2011)
+fix
+	In countries where the thousands separator is the point (Belgium, for example), when entering an amount without a currency unit (eg 5,25), this number was transformed into a different number (eg 525,00&nbsp;&euro;).
+	In "Statements" tab: When opening multiple accounts while running Yapbam, editing transactions resulted in the appearance of the edit dialog of the transaction several times.
+
+version	0.9.2 (09/18/2011)
+fix
+	Since the 0.9.0 version, when Yapbam was configured to remember the filter and the opened file between two launches, and Yapbam is closed with a password protected file opened, Yapbam was unable to start again. The only way to restart Yabam was to erase the line starting with "filter" in Data/.yapbam file.<br/> In order to fix this major problem as fast as possible, and as it is caused by a misconception of the filter backup, the filter backup is deactivated in this release when using password protected file.
+	In importation: When the imported file contained invalid lines and the last column of the file wasn't attached to a transaction attribute, the importation failed.
+
+version	0.9.1 (09/16/2011)
+fix
+	Exportation was impossible if a previous exportation has been made in a previous Yapbam version.
+	In the payment mode dialog, the "validate" button was not always disabled when some fields were empty. Validating such a dialog caused an error.
+
+version	0.9.0 (09/14/2011)
+improvement
+	Adds a preference dialog to set which data is remembered between two Yapbam launches.
+	The filter can be remembered between two launches.
+	Adds a comment field to the transactions.
+	Adds a method for creating mass transactions.
+	Changes to the yapbam.sh script in order to simplify the use on macOS.
+fix
+	In the import process: When there were missing columns at the end of imported lines, the import failed.
+	When, in the transaction input dialog, you chose a predefined label with the date field empty, the error dialog signaled a program error.
+	The mode creation dialog allowed the user to check the "use a checkbook" box then to uncheck the "Usable for expenses" box. Validating such a dialog caused an error.
+	In the subtransaction edition dialog: When you chose a description in the popup menu by clicking on it with the mouse, the description appeared in the field (this is the normal behavior). But, when validating the input, the description saved was the one before selecting the predefined description !
+	Entering an invalid regular expression in the "custom filter" dialog caused an error when validating the dialog.
+
+version	0.8.8 (08/03/2011)
+fix
+	In the transactions table of the balance history tab; When a transaction was edited, the table was refreshed, but not with the right data.
+	In the import process: When a the imported file contained invalid values and has more than none columns, the import failed.
+	In the "periodical transactions" administration panel. The table was not refreshed when these transactions were modified.
+
+version	0.8.7 (07/23/2011)
+improvement
+	The "customized filter" dialog is smaller and now compatible will 768px height screens.
+fix
+	In some dialogs:<ul><li>The cancel button in the category dialog and the account dialog confirmed the dialog (same action as ok !).</li><li>In some dialogs, typing a wrong value didn't prevent you from validate the dialog if you clicked very, very, very quickly the ok button.</li></ul>
+	In the administration tab:<ul><li>"Delete", "Duplicate" and "Edit" buttons were not grayed out when no data was selected. Sometimes it could cause crashes.</li><li>Deleting the content of the "initial balance" cell of an account in the accounts table caused a crash.</li></ul>
+	In transaction dialog, checking the receipt box when amount field was empty caused a crash.
+	In the "customized filters" dialog: The "Clear all filters" button didn't erase the filter based on the receipt/expense nature of the transaction.
+
+version	0.8.6 (06/05/2011)
+fix
+	When a tab was dragged and dropped outside of the tabs area, an error occurred.
+
+version	0.8.5 (05/31/2011)
+fix
+	In the entry wizard. It could hang when the description was not in the filtered transactions.
+
+version	0.8.4 (05/30/2011)
+improvement
+	Tabs order can now be changed.
+	Adds menu accelerator for editing or duplicating.
+	Adds menu item for checking a transaction.
+	Reduces popup menus in the "Statistics" tab to useful items(for example: no more "save". It wrote an unreadable file).
+fix
+	Selecting a transaction in the statement tab or in the balance history tab didn't enabled delete/edit/duplicate menu items.
+	If the file opened at startup had an alert on the balance, it was not immediately displayed in the "Balance History" tab.
+	Fixes some localization problems (some wordings with a wrong language).
+
+version	0.8.3 (05/08/2011)
+improvement
+	Adds an accounts summary view.
+	Adds a transaction table in the balance history tab. This table shows transactions, sorted by value date, with the remaining balance after each transaction.
+	When a value date interval is selected in the filter, the balance history chart now begins and ends on the value dates specified in the filter.
+	The check mode is moved in the Statement view. This view has now columns "category" and "Mode",   a menu to show/hide columns and the ability to sort the view along the column of your choice
+	Adds a confirm dialog when the user export the budget view to an existing file.
+	Adds transaction editing options to fill automatically the statement id attribute of the transactions, to be alerted when you change a checked transaction to confirm transactions deletion, etc...
+fix
+	In Statement view:<ul><li>When a transaction were edited or created, the selected statement could be changed.</li><li>When a filter was defined, and you changed the selected statement, the content of the statement was filtered.</li></ul>
+	In password protection: The password protection was cleared every time the file was saved again.
+	The help on Linux was broken.
+	Selecting an item in the contextual menu on a chart in statistics tab resulted in an error.
+
+version	0.8.2 (04/10/2011)
+improvement
+	When the filter selects only one account, and you create a new transaction (or a periodical transaction), the filtered account is now automatically selected in the dialog.
+	The hidden columns in the transactions table are saved from one execution to another. The columns in "Display columns..." menu are now in the same ordre as in the transactions table.
+	The columns widths and positions of the tables in the "account management" tab are now saved from one execution to another. Same for tables appearing in dialogs (transaction edition dialog, for instance), for printer settings (paper format, margins, etc...)
+	Improves the entry wizard.
+	Adds basic printing of account statements.
+	Adds edit wizard on subtransaction description field.
+fix
+	In file import: An empty amount field could make the import fail.
+
+version	0.8.1 (03/05/2011)
+improvement
+	The category-wise expenses pie is now sorted by category name.
+	Adds a "Tutorial" button to the welcome screen.
+fix
+	Setting the country/language didn't change some date format.
+	When very old transactions were not checked, the&nbsp;"Not checked" statement may not be the most recent one in the "account statements" view. It led to wrong balances at beginning and end of period for statements placed before the "Not checked" statement.
+
+version	0.8.0 (02/04/2011)
+improvement
+	Adds new look and feels (see the File/Preferences menu - "Appearance" tab). We recommend that you try the Nimbus look and feel.
+	Adds a welcome screen with useful shortcuts and tips.
+	Introduces a new auto update mechanism. No need to manually download the updates, now, they will install automatically.
+	Improves the entry wizard. The most likely choices are now offered first.
+	Adds the ability to send a crash report to the Yapbam team when an error occurs.
+	Adds an alert message if you try to save a data file in the installation directory (which may lead to data loss).
+fix
+	Use of up and down arrows in integer fields were not safe. It could make the value in the field out of range.
+	When editing a transaction, if you chose a description with the wizard that would have imply the use of a checkbook, the check number field was not properly initialized.
+	Create a receipt with a null amount may lead to errors.
+	Disallow a payment mode may lead to errors.
+	Creating a category in a subtransaction could change the transaction category.
+	Creating an inactive periodical transaction without frequency data caused crash in the administration panel.
+
+version	0.7.4 (12/12/2010)
+fix
+	Filtering transactions with an amount equals to a value was broken (all transactions with amount higher or equal to the value were selected).
+	In the currency converter tool. When connection to the ECB site failed, no window appeared.
+	Fixes minor bugs in the statement view.
+
+version	0.7.3 (11/26/2010)
+improvement
+	 Adds a launch script for Linux computer. 
+fix
+	The statistics charts were wrong since 0.7.2.
+
+version	0.7.2 (11/23/2010)
+improvement
+	Minor improvement in check mode (Changing the date field automatically selects the box "Change value date by").
+	The "filter" menu is now hidden when the "Account statements" tab is selected (the filter is ignored in this view).
+	Adds "receipts" and "expenses" check boxes in the "customized filter" dialog.
+	The Yapbam directory structure is changed to match the PortableApps.com format.
+fix
+	Minor bugs in the "customized filter" dialog.
+	A minor bug under Windows Vista : After the end of the program (yapbam.exe), Vista asked if the program ran fine.
+
+version	0.7.1 (11/09/2010)
+improvement
+	Performance improvement: Administration tasks are far faster than in previous versions (for instance, deletion of an account or a category).
+fix
+	In some countries, the parsing of grouping separator in monetary values was wrong (ie, in France 5 000,00 wasn't considered as a valid value).
+	Sometimes, import&nbsp; did ... nothing ! :-(
+
+version	0.7.0 (10/17/2010)
+improvement
+	Adds a "bank statements" view.
+	When launching Yapbam, the transactions table is automatically scrolled to the most recent transactions.
+
+version	0.6.7 (09/21/2010)
+fix
+	Fixes a major bug in data file reading: Some transactions was lost when checkbook was used and number was empty.
+
+version	0.6.6 (09/19/2010)
+improvement
+	Adds the ability to protect access to data files by password.
+
+version	0.6.5 (08/10/2010)
+improvement
+	Adds a confirm dialog when the user save data in an existing file.
+	File import improvements:<ul><li>In the error dialog, you now have the choice to cancel the import or to process only lines without error. Fields with errors are now displayed in red to help identifying them.</li><li>Import settings (imported columns, column separator, etc...) are now kept in memory, you retrieve them if you import again.</li><li>The amount parser is now more strict (previously an amount string of "52g32" results in an transaction with an amount of 52. Now the line is reported as an error).</li></ul>
+fix
+	Fixes a bug in import that prevents the import error dialog to be displayed sometimes.
+	Fixes the transactions list panel's tool tip.
+	Fixes some bugs in balance history pane:<ul><li>Sometimes, today was not visible in the window.</li><li>Sometimes, erroneous balance alerts were displayed.</li></ul>
+
+version	0.6.4 (05/16/2010)
+improvement
+	Improves the balance alert: Each account can have two balance thresholds. An alert is displayed in the balance history view whenever the balance is not between these values.
+	Improves the balance history pane:<ul><li>Add a button to set the selected date to today.</li><li>Add a menu that lists the balance alerts. Selecting an alert sets up the filter in order to view the balance history of the account on which the alert occurs.</li></ul>
+fix
+	The initial balance editing in the account administration panel was broken.
+	In periodical transaction generation:<ul><li>When the generated transactions were edited during their generation, changes where ignored.</li><li>There were many problems with periodical transaction with an end date.</li>
+	Fixes a minor bug in the "Filter" menu refresh.
+
+version	0.6.3 (04/24/2010)
+improvement
+	Updates the installation instructions.
+fix
+	The selected date in the balance history panel was often reset to today.
+
+version	0.6.2 (04/09/2010)
+improvement
+	Adds an alert in the transactions panel when some periodical transactions have to be generated.
+	Better integration with Microsoft Windows (introduces the Yapbam.exe application).
+
+version	0.6.1 (04/02/2010)
+improvement
+	Adds checkbook management.
+	Adds access to web resources (Yapbam site and Yapbam support page).
+	Improves launch speed (The launch don't wait anymore for the "new release check" to finish).
+	Improves the check for updates process (this check can now be interrupted if the connection takes too long).
+	Improves the account administration screen.
+	Improves integer field input (now only numerical characters can be typed in such fields and up and down arrows respectively increase or decrease the field value).
+	Simplifies account creation dialog. Users report that the ability to add payment modes in this screen was confusing.
+	Auto-scrolls the balance history view to always have the selected date visible when this panel appears.
+fix
+	Yapbam had a 'strange' behavior when dates where entered using a 1 digit year format (for instance 03/20/9).
+
+version	0.6.0 (03/09/2010)
+improvement
+	Adds text file import/export capabilities.
+	Adds an alert icon to the balance history tab when there is a negative balance period in the future.
+	Improves date fields behavior.
+fix
+	The auto-complete wizard sometimes failed to deduce the payment mode.
+	Sometimes, in the transactions table, transactions with subtransactions appeared with a complement that had an amount equals to zero
+
+version	0.5.4 (02/08/2010)
+improvement
+	Portuguese translation (Thank's to Marco).
+	Adds an auto-complete wizard in the "new transaction" dialog that completes the description as you type and deduces the category and payment mode.
+fix
+	Data files were deleted while saving under some Linux configurations.
+
+version	0.5.3 (01/25/2010)
+improvement
+	Currency converter Portuguese translation (Thank's to Marco)
+	Adds the ability to show/hide columns in the transactions table.
+fix
+	Fixes a lot of mistakes in english wording (Thank's to Sharada)
+
+version	0.5.2 (01/21/2010)
+improvement
+	Adds ability to edit payment modes.
+
+version	0.5.1 (01/17/2010)
+improvement
+	Adds transactions printing (feature requested by users).
+	Adds a button in the transactions table to show/hide all the subtransactions.
+
+version	0.5.0 (01/10/2010)
+improvement
+	Adds a budget view (it seems users really want it).
+	Adds a preference panel to configure the balance report fields colors (some users reported the positive balance were quite illegible).
+fix
+	In statistic panel, sometimes, some transactions that would have been rejected by the filter were not.
+
+version	0.4.0 (01/03/2010)
+improvement
+	Introduce extended filtering capabilities (on category, modes, etc ...).
+fix
+	Fixes a lot of mistakes in english wordings. Fixes some missing tooltips.
+	Sometimes, the next date of a periodical transaction was not updated after generating an occurence of this transaction.
+	The currency converter tool didn't work under Ubuntu (and probably other Linux systems).
+	The currency converter tool was very, very slow when European Central Bank did not refresh its rates for more than one day (for instance when it's new year's day).
+	Sometimes, it was impossible to change the account of a transaction.
+	
+version	0.3.7 (12/05/2009)
+improvement
+	Dates can now be selected in a calendar.
+
+version	0.3.6 (11/22/2009)
+fix
+	In the periodical transaction edit dialog, it was impossible to leave the end date blank if this field gained the focus.
+
+version	0.3.5 (11/20/2009)
+improvement
+	The periodical transactions can now have a end date.
+fix
+	Saving data containing a periodicalTransaction with a daily period didn't work.
+
+version	0.3.4 (11/11/2009)
+fix
+	Under some Windows XP, the preferences and the last state were not saved.
+
+version	0.3.3 (11/02/2009)
+fix
+	When a new file was opened, the category list in the administration tab was not refreshed.
+	Sometimes, when the transactions table was sorted, editing a transaction resulted in a strange Yapbam state : The transaction looked like it wasn't modified and the transactions table doesn't respond anymore.
+
+version	0.3.2 (11/01/2009)
+improvement
+	The main frame title now indicates if the data needs to be saved (its title ends with a *).
+fix
+	Deleting a category used in a transaction corrupted the data.
+	When reading the last opened file failed, this file was still considered as "last opened file". 
+	If, after reading a file you create a new file, then quit and restart Yapbam, the file was opened again
+
+version	0.3.1 (10/31/2009)
+improvement
+	The currency converter tool now work through proxied Internet connections and a now displays a conversion rates table.
+fix
+	When the currency converter was called, closing the main window didn't shutdown the java virtual machine.
+	The percentage in the pie statistic's chart's tooltips were wrong.
+	Sometimes, when a transaction was duplicated or convert to periodical, the payment mode of the created transaction were wrong.
+	The balance history was wrong when there was a switch from summer to winter time in it.
+
+version	0.3.0 (10/25/2009)
+improvement
+	Add a category statistic panel.
+	Add a currency converter tool (a preview release which don't work with Internet connections through a proxy).
+	Change the administration panel layout.
+fix
+	The "converts to periodical transaction" menu item stayed enabled when we leaved the "transactions" panel.
+
+version	0.2.9 (10/24/2009)
+improvement
+	Developers : Rewrite of transactions filtering in order to prepare statistics plugin.
+fix
+	When transactions where removed, the balance history could contains extra segments (especially when you removed all the transactions).
+
+version	0.2.8 (10/18/2009)
+improvement
+	Add a payment mode administration panel with the ability to remove payment modes.
+fix
+	When an used category was deleted, sometimes, it remained some transactions with that category.
+
+version	0.2.7 (10/16/2009)
+improvement
+	During the first startup, Yapbam now ask if you want to connect to the Internet and check for update.
+fix
+	A double-click on the transaction list in the check mode opened the "edit" dialog instead of mark the transaction as checked.
+
+version	0.2.6 (10/13/2009)
+improvement
+	Add a administration panel to manage categories.
+	An empty date field is now equivalent to "today". When you duplicate a transaction, in the dialog, the date is automatically set to today
+fix
+	The popup menu in the accounts administration panel had many separators.
+	The account manager now verified that new account name is not empty, and not already used.
+	When you pressed return during editing a transaction date, the value date was not refreshed.
+	The state of "ignored" check boxes in the "generate periodical transactions" dialog was inverted.
+
+version	0.2.5 (10/10/2009)
+improvement
+	Add account management.
+
+version	0.2.4 (10/02/2009)
+fix
+	Under Linux, if Yapbam was launch with a right click on the jar file, the preference and state files were saved in the user home directory, not in Yapbam directory.<br>As Yabam is portable, it was a mistake.
+
+version	0.2.3 (10/01/2009)
+improvement
+	Adds the ability to edit or ignore transactions during the periodical transactions generation process.
+	Adds the ability to sort the transactions table and the periodic transactions table.
+
+version	0.2.2 (09/30/2009)
+improvement
+	Add auto check for Yapbam updates.
+	The "Transactions" menu now remains visible in all the panel.
+
+version	0.2.1 (09/28/2009)
+improvement
+	Add popup menu to edit/delete/duplicate periodical transactions in the administration panel.
+fix
+	menuItem to check the selected transaction in the transactions table contextual menu was shown even if the statement field was not documented.
+
+version	0.2.0 (09/27/2009)
+improvement
+	Introduce full periodic transactions support (now, they can be generated). I plan to improve this functionality which the ability to edit generated transactions in the generation dialog.
+	Adds menu items to convert a transaction into a periodical transaction.
+
+version	0.1.20 (09/24/2009)
+fix
+	In the new/edit transaction dialog, when you created a new mode, account or category with a very long name, the window appearance was broken.
+	Oups ! Some wording were not translated in the new Account dialog.
+	The duplicate button in the new account dialog had no wording ... and did nothing.
+	A lot of problems in the new account dialog with the mode list buttons.
+
+version	0.1.19 (09/23/2009)
+improvement
+	Adds an administration panel, with the ability to define and manage periodical transactions.
+	Adds tooltips on main window tabs.
+	Changes the "duplicate" button behavior (in the transactions panel). Now, the edition dialog is automatically opened when you duplicate a transaction.
+
+version	0.1.18 (09/19/2009)
+improvement
+	Adds some toolTips.
+	Adds an alert dialog when Yapbam is launched with an incompatible old java version (prior to 1.6).
+fix
+	Some problems in menu items refresh. Some of them were enabled or disabled ... but they'd rather not.
+
+version	0.1.17 (09/18/2009)
+improvement
+	Add a menuItem to check the selected transaction in the transactions table contextual menu.
+	Developpers : Switch to a plug-in architecture for all the panels in the main window.
+fix
+	The proxy authentication was broken.
+	When an account was added, sometimes, the filter menu was broken.
+	Oups ! Some wording were not translated in the new Account dialog.
+
+version	0.1.16 (09/17/2009)
+improvement
+	Add support Internet connection through a proxy.
+	Add a contextual menu on the transactions table.
+fix
+	A double click with the right button (or the central one) edited the selected transaction (not the one clicked). Now right double clicks are ignored.
+	
+version	0.1.15 (09/14/2009)
+improvement
+	Add underground Internet connection through proxy support (need to edit the preference file by hand).
+fix
+	<a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2858596&amp;group_id=276272&amp;atid=1173518">Bug 2858596</a> fixed : "Deleted or added transactions has no effect on display".
+
+version	0.1.14 (09/13/2009)
+fix
+	When the preferred localization changed, the dates in the transaction table were still displayed using the initial localization.
+improvement
+	Add a new menu item to check for updates.
+
+version	0.1.13 (09/11/2009)
+improvement
+	A lot of undergroud work in order to implement account management in a future release.
+	The bank account creation dialog allows you to create payment method.
+	Improves the sort of the transactions list (in previous versions a duplicated transaction could appear far away for its clone).
+	Improves the "last state save":<ul><li>Be aware : In order to prepare a plugin architecture, the state file format changed. Your previous column sizes wiln not be restored when you will upgrade to this version.</li><li>The order of the columns is saved (in previous releases, column order where always reset to the default order, and the saved column size where applied tothe default column order ... which could be considered as a bug).</li><li>The scroll position of the transactions table is now saved.</li></ul>
+fix
+	<a href="https://sourceforge.net/tracker/?func=detail&aid=2856006&group_id=276272&atid=1173518">Bug 2856006</a> fixed : "Last chance to save is broken in v0.1.12".
+	<a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2856394&amp;group_id=276272&amp;atid=1173518">Bug 2856394</a> fixed : "Balances disappears during interface reloading after a preference change".
+	When first transaction table column (the open/close subtransactions control) was moved, you still had to click the first column to deploy the subtransactions view.
+
+version	0.1.12 (09/07/2009)
+improvement
+	Adds a Preference item in the File menu. The localization and the application's look & feel can be chosen
+
+version	0.1.11 (09/05/2009)
+improvement
+	The english translation is complete
+fix
+	<a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2852451&amp;group_id=276272&amp;atid=1173518">Bug 2852451</a> fixed : "No difference between new and modify dialogs title"
+
+version	0.1.10 (09/04/2009)
+improvement
+	Improved About dialog.
+
+version	0.1.09 (09/01/2009)
+improvement
+	First pre-alpha release.

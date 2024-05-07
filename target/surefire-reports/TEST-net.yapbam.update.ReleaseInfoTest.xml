@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="net.yapbam.update.ReleaseInfoTest" time="0.312" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sonar.login" value="To be completed"/>
+    <property name="sonar.host.url" value="https://sonarcloud.io"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/test-classes:/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/classes:/Users/steph/.m2/repository/com/fathzer/ajlib/0.3.14/ajlib-0.3.14.jar:/Users/steph/.m2/repository/com/fathzer/javaluator/3.0.3/javaluator-3.0.3.jar:/Users/steph/.m2/repository/com/fathzer/yapbam-commons/1.9.1/yapbam-commons-1.9.1.jar:/Users/steph/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/steph/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/steph/.m2/repository/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar:/Users/steph/.m2/repository/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar:/Users/steph/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/steph/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/steph/.m2/repository/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.jar:/Users/steph/.m2/repository/com/fathzer/jlocal/1.0.0/jlocal-1.0.0.jar:/Users/steph/.m2/repository/com/fathzer/jclop-dropbox2/0.1.6/jclop-dropbox2-0.1.6.jar:/Users/steph/.m2/repository/com/dropbox/core/dropbox-core-sdk/3.2.1/dropbox-core-sdk-3.2.1.jar:/Users/steph/.m2/repository/com/fathzer/jclop2/0.1.0/jclop2-0.1.0.jar:/Users/steph/.m2/repository/org/apache/httpcomponents/httpclient/4.5.11/httpclient-4.5.11.jar:/Users/steph/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/steph/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/steph/.m2/repository/com/fathzer/yapbam-launcher/1.0.1/yapbam-launcher-1.0.1.jar:/Users/steph/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/steph/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/steph/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/steph/.m2/repository/com/github/jtidy/jtidy/1.0.2/jtidy-1.0.2.jar:/Users/steph/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/steph/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/steph/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.boot.library.path" value="/Users/steph/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.10.v20240120-1143/jre/lib"/>
+    <property name="sun.java.command" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/surefire/surefirebooter-20240426171228720_3.jar /Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/surefire 2024-04-26T17-12-28_577-jvmRun1 surefire-20240426171228720_1tmp surefire_0-20240426171228720_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/test-classes:/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/classes:/Users/steph/.m2/repository/com/fathzer/ajlib/0.3.14/ajlib-0.3.14.jar:/Users/steph/.m2/repository/com/fathzer/javaluator/3.0.3/javaluator-3.0.3.jar:/Users/steph/.m2/repository/com/fathzer/yapbam-commons/1.9.1/yapbam-commons-1.9.1.jar:/Users/steph/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/steph/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/steph/.m2/repository/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar:/Users/steph/.m2/repository/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar:/Users/steph/.m2/repository/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar:/Users/steph/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/steph/.m2/repository/org/slf4j/slf4j-simple/1.7.12/slf4j-simple-1.7.12.jar:/Users/steph/.m2/repository/com/fathzer/jlocal/1.0.0/jlocal-1.0.0.jar:/Users/steph/.m2/repository/com/fathzer/jclop-dropbox2/0.1.6/jclop-dropbox2-0.1.6.jar:/Users/steph/.m2/repository/com/dropbox/core/dropbox-core-sdk/3.2.1/dropbox-core-sdk-3.2.1.jar:/Users/steph/.m2/repository/com/fathzer/jclop2/0.1.0/jclop2-0.1.0.jar:/Users/steph/.m2/repository/org/apache/httpcomponents/httpclient/4.5.11/httpclient-4.5.11.jar:/Users/steph/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/steph/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/steph/.m2/repository/com/fathzer/yapbam-launcher/1.0.1/yapbam-launcher-1.0.1.jar:/Users/steph/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/steph/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/steph/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/steph/.m2/repository/com/github/jtidy/jtidy/1.0.2/jtidy-1.0.2.jar:/Users/steph/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/steph/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/steph/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:/Users/steph/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/steph"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/steph/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.10.v20240120-1143/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam/target/surefire/surefirebooter-20240426171228720_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="user.name" value="steph"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.4.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.10+7"/>
+    <property name="localRepository" value="/Users/steph/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/63/hsxd8v3x3430d0w5dcfxnzdw0000gn/T/"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="/Users/steph/Library/CloudStorage/OneDrive-TheUniversityofSydney(Students)/Software Engineering/Fourth Year/sem1/ELEC5618 Software Quality Engineering/yapbam"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sonar.organization" value="fathzer-github"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/steph/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="test" classname="net.yapbam.update.ReleaseInfoTest" time="0.131"/>
+</testsuite>

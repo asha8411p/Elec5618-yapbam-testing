@@ -1,0 +1,1083 @@
+Version en cours de développement	Bug connu :	Bugs connus :	Changement :	Changements :	Correction de bug :	Corrections de bugs :
+version	next
+known
+	Yapbam, lorsqu'il est exécuté par Java 1.6, plante quand on sélectionne un raccourci vers un dossier dans le menu déroulant d'un dialogue de sélection de fichier.<br/>En fait, ce n'est pas un bug de Yapbam, mais un <a href="https://bugs.sun.com/bugdatabase/view_bug.do;jsessionid=518b010bce71d8547e0dfeee596a?bug_id=6550546">bug de java 1.6</a>. La meilleure façon de régler le problème est d'utiliser Java 1.7.
+	Sur MacOS, Le raccourci clavier du copier/coller est CTRL C/V et non commande C/V. Malheureusement, c'est un bug de Java qui ne peut être corrigé.
+	Sur Windows, les thèmes autre que Nimbus rendent incorrect l'alignement vertical des colonnes "description" et "commentaire" (Cela semble un bug de Java).
+	
+version	0.21.3 (14/02/2023)
+fix
+	La création d'une nouvelle connexion à Dropbox ne fonctionnait plus (Dropbox a cessé de fournir des jetons de connexion éternels utilisés jusqu'alors).
+	La lecture des données sur un disque réseau était extrêmement lente.
+	Lorsqu'on changeait la date dans le dialogue de génération des opérations périodiques, une erreur pouvait survenir.
+	L'application plantait au démarrage lorsqu'elle était configurée en arabe.
+	Les versions 0.21.0 à 0.21.2 n'étaient plus compatibles avec java 1.6 et 1.7, sans que ce soit intentionnel. 
+
+version	0.21.2 (04/12/2021)
+improvement
+	Traduction en italien des pages d'aide ainsi que de la license et de la page des contributeurs.
+fix
+	Le menu File/Import ne fonctionnait plus dans les versions 0.21.0 et supérieures.
+
+version	0.21.1 (28/11/2021)
+fix
+	La version précédente se plantait quand elle était configurée dans une autre langue que français ou italien.
+
+version	0.21.0 (26/11/2021)
+improvement
+	Ajoute des alertes quand les chéquiers se terminent.
+	Ajoute l'export en Html et en Json.
+	Les relevés de compte peuvent à présent être exportés.
+fix
+	Les exports de l'historique du solde contenaient des descriptions encodées en HTML.
+
+version	0.20.15 (25/07/2021)
+fix
+	Quand on débranchait un écran après avoir quitté l'application, la fenêtre de l'application pouvait, au démarrage, s'ouvrir en dehors des écrans restants.
+	Les dialogues de sélection de fichiers (ouverture, sauvegarde ou export) ne fonctionnaient pas avec Java >= 16.
+	Dans l'onglet "Administration/Opérations périodiques", lorsqu'un filtre était activé (et que le bouton ignorer le filtre n'était pas coché) l'édition/suppression, etc, n'était pas effectuée sur l'opération sélectionnée.
+
+version	0.20.14 (14/09/2020)
+fix
+	La bulle d'aide du bouton "Exporter" dans l'onglet "Historique du solde/Opérations" était incompréhensible.
+	Quelques modifications dans la traduction en Italien.
+
+version	0.20.13 (09/05/2020)
+improvement
+	La traduction en Italien est complète.
+
+version	0.20.12 (25/02/2020)
+fix
+	Mise à jour des librairies Dropbox afin de restaurer la possibilité de sauver les données dans Dropbox.
+	
+version	0.20.11 (21/02/2020)
+improvement
+	Ajoute la traduction en Néerlandais.
+fix
+	Corrige les problèmes de sélection du filtre édité/supprimé/dupliqué dans l'onglet "Administration/Filtres".
+	Corrige certaines traductions en Italien.
+
+version	0.20.10 (19/05/2019)
+improvement
+	Ajoute/Corrige des traductions en Italien et Portuguais.
+
+version	0.20.9 (11/11/2018)
+fix
+	Corrige un bug majeur empéchant la sauvegarde de nouveaux fichiers dans Dropbox.
+
+version	0.20.8 (10/11/2018)
+fix
+	Corrige un bug, ou plutôt une régression de java 1.8.111+, qui interdit par défaut l'usage de proxy avec authentification basique. 
+	Corrige des bugs d'affichage mineurs.
+
+version	0.20.7 (15/10/2018)
+improvement
+	Suppression de la source de données "Yahoo" dans le convertisseur de devises (Yahoo a fermé ce service).
+fix
+	Les news sont de nouveau disponibles en java 1.6 et 1.7.
+
+version	0.20.6 (16/06/2018)
+improvement
+	Ajoute la traduction en Grec.
+	La traduction en allemand est terminée.
+
+version	0.20.5 (25/03/2018)
+fix
+	Le bouton "Renommer" dans l'onglet "Relevés de comptes" ne renommait pas seulement le relevé sélectionné, mais également tous les relevés de même nom dans les autres comptes.
+	Lorsqu'on spécifiait le fichier à ouvrir comme argument de l'application Yapbam, le filtre précédent n'était jamais restauré. 
+
+version	0.20.4 (28/01/2018)
+improvement
+	La traduction en arabe est maintenant terminée.
+	Ajoute plus de traductions en italien et certaines en japonais. 
+
+version	0.20.3 (07/01/2018)
+improvement
+	La traduction en espagnol est maintenant terminée.
+	Ajoute plus de traductions en polonais et certaines en arabe. 
+fix
+	Cliquer sur une cellule de la colonne "Reportée" dans le dialogue "Génération des opérations périodiques" ne sélectionnait pas la ligne. Sous Debian 9.3, il en résultait une erreur.
+
+version	0.20.2 (24/12/2017)
+improvement
+	Ajoute des traductions en espagnol.
+fix
+	Corrige le problème de date de fin erronnée dans le filtre quand ce filtre était obtenu via le bouton "Filtre" de l'onglet "Budget".
+
+version	0.20.1 (22/12/2017)
+improvement
+	La traduction en turc est presque complète. Ajoute des traductions partielles en espagnol et hongrois.
+
+version	0.20.0 (10/12/2017)
+improvement
+	Ajoute la possibilité d'utiliser les dates de valeurs des opérations comme référence dans l'onglet "budget".
+	Ajoute la possibilité de sauvegarder des filtres personnalisés.
+fix
+	Sous Java 9, certains montants étaient détectés comme invalides (par exemple "50,00 &euro;" en France).
+
+version	0.19.8 (28/10/2017)
+fix
+	La lecture d'un fichier crypté à l'aide de Java 9 entraînait une erreur.
+
+version	0.19.7 (08/10/2017)
+fix
+	Un changement d'URL de la source taux de change de Yahoo empêche le convertisseur de devise des versions précédentes de fonctionner.
+
+version	0.19.6 (09/07/2017)
+fix
+	Bascule vers la version 3.0.3 du SDK Dropbox, laquelle corrige des bugs.
+
+version	0.19.5 (11/06/2017)
+fix
+	Sélectionner un rélevé dans le dialogue "Filtre personnalisé" puis sélectionner le menu "Filtre/opérations non pointées" provoquait une erreur.
+
+version	0.19.4 (05/03/2017)
+improvement
+	Ajoute la possibilité de scroller la liste des comptes dans le menu "Filtre" lorsque ceux-ci sont trop nombreux.
+	Ajoute de nouvelles traductions en Italien.
+	Ajoute de nouvelles traductions en Russe.
+
+version	0.19.3 (18/02/2017)
+improvement
+	Ajoute la traduction partielle en Italien.
+	Ajoute de nouvelles traductions en Russe.
+
+version	0.19.2 (31/12/2016)
+improvement
+	Ajout de la traduction partielle en polonais.
+fix
+	Se connecter a un nouveau compte Dropbox avec la version 0.19.0 ou 0.19.1, dans une langue autre que le français, provoquait une erreur.
+
+version	0.19.1 (11/12/2016)
+fix
+	Se connecter a un nouveau compte Dropbox avec la version 0.19.0 provoquait une erreur.
+
+version	0.19.0 (10/12/2016)
+improvement
+	Compatibilité avec la version 2 des API de Dropbox (Dropbox cessera d'être utilisable avec les versions précédentes le 28 juin 2017).
+	Ajoute des traductions en Russe.
+fix
+	Les messages de l'équipe Yapbam n'étaient plus affichés quand Yapbam était lancé à partir d'une version de Java antérieure à la 1.8.0_101.
+	Yapbam peut à présent suivre les redirections d'http vers https lors du téléchargement des messages de l'équipe ou la recherche des mises à jour.
+
+version	0.18.11 (06/11/2016)
+improvement
+	Ajoute des traductions en Russe.
+
+version	0.18.10 (05/06/2016)
+fix
+	Dans les calendriers, le choix d'une date plus que 20 ans dans le futur était mal interprété (ex : 2050 était interprété comme 1950).
+
+version	0.18.9 (06/03/2016)
+fix
+	Il était possible de valider la boîte de dialogue de filtre personnalisé avec la case "Opérations pointées" alors qu'aucun bouton radio n'était sélectionné. Cela provoquait une erreur lorsqu'on sur le bouton "Valider" si le champ "Relevé" n'était pas vide.
+improvement
+	Ajoute la possibilité d'afficher les soldes nets dans l'onglet "Statistiques"/"Recettes/dépenses".
+
+version	0.18.8 (31/01/2016)
+fix
+	Les commentaires d'opérations contenant des liens étaient parfois mal décodés.
+	Corrige l'alignement des boutons dans l'onglet d'administration.
+	Corrige le menu "Fichier" quand les données sont presque vides (pas de comptes créés, juste des catégories ou le séparateur de catégories).
+
+version	0.18.7 (28/12/2015)
+fix
+	Les couleurs de fond des cellules de l'onglet "Relevés de compte" étaient incorrectes quand les lignes étaient triées.
+	Corrige l'alignement vertical des colonnes "description" et "commentaire" pour le thème Nimbus (améliore cet alignement avec les autres thèmes - voir les bugs connus).
+improvement
+	Les opérations archivées peuvent à présent être restaurées vers le fichier de données "standard".
+	Ajoute la possibilité de saisir une date <i>x</i> jours, mois, années dans le futur en tapant +x, ++x, +++x dans le champ (respectivement -x, --x, --x pour x jours/mois,années dans le passé).
+
+version	0.18.6 (29/11/2015)
+fix
+	Certains filtres n'étaient pas correctement récupérés au démarrage (exemple: filtrage des opérations pointées).
+improvement
+	Les commentaires d'opérations peuvent à présent contenir des liens vers des fichiers ou des pages web.
+	Les colonnes de la table affichant les opérations périodiques générées sont maintenant dimensionnées en fonction de leur contenu.
+	
+version	0.18.5 (11/10/2015)
+improvement
+	Les opérations periodiques peuvent à présent être filtrée dans l'onglet "Administration/Opérations périodiques".
+	Ajout d'un résumé des opérations à venir dans l'onglet "Administration/Opérations périodiques".
+
+version	0.18.4 (20/09/2015)
+improvement
+	Ajout d'un résumé des opérations affichées dans l'onglet "Opérations".
+
+version	0.18.3 (12/07/2015)
+fix
+	Mise à jour du convertisseur de devises afin de se conformer aux changements du web service Yahoo (Le dollar américain n'yest plus représenté comme les autres devises).
+
+version	0.18.2 (25/05/2015)
+fix
+	Lorsqu'on modifiait une opération dans le tableau des "Opérations" de l'onglet "Historique du solde", et que les opérations étaient triées de la plus récente vers la plus ancienne, l'opération sélectionnée en fin d'édition n'était pas celle éditée. 
+improvement
+	Les dialogues peuvent maintenant être fermées avec la touche d'échappement.
+	Ajout des traductions partielles en russe et néerlandais.
+
+version	0.18.1 (22/02/2015)
+fix
+	Suppression du thème "Mac OS X" qu'un bug de Java empêche de fonctionner correctement (impossible de sauvegarder dans un nouveau fichier).
+improvement
+	Ajout d'une zone dans la fenêtre principale affichant les messages de l'équipe Yapbam (Alerte sur l'usage de version de Java obsolète, demande d'aide, ...).
+
+version	0.17.11 (08/02/2015)
+fix
+	Bug introduit en 0.17.8: Le menu filtre restait toujours masqué quand Yapbam s'ouvrait, au démarrage, sur les onglets "Bilan des comptes", "Relevés de comptes" or "Administration".
+
+version	0.17.10 (17/01/2015)
+fix
+	Bug introduit en 0.17.8 : L'édition d'une opération existante changeait la date de valeur, et parfois le numéro ou le relevé.
+
+version	0.17.9 (11/01/2015)
+fix
+	Dans l'onglet "Historique du solde/Opérations", les recettes n'étaient pas comptabilisées avant les dépenses, ce qui provoquait des fausses alertes.
+improvement
+	Ajout de la possibilité de masquer les soldes intermédiaires dans le tableau "Opérations" de l'onglet "Historique du solde".
+
+version	0.17.8 (04/01/2015)
+fix
+	Lors de la sélection d'un libellé prédéfini dans le dialogue de création des sous-opérations, la case recette était systématiquement cochée.
+	Lors de la saisie en rafale, quand, pour une opération autre que la première, on choisissait un libellé prédéfini impliquant l'usage d'un chéquier, le numéro de chèque n'était pas renseigné.
+	Lorsqu'on enregistrait un fichier dans un dossier où l'utilisateur n'avait pas l'autorisation de supprimer des fichiers, une erreur survenait après la sauvegarde du fichier.
+	Dans l'onglet "Historique du solde", lorsqu'on passait d'un compte à l'autre via le menu filtre, l'échelle verticale n'était parfois pas correctement remise à jour. 
+improvement
+	Ajout des traductions partielles en turc et chinois traditionnel.
+
+version	0.17.7 (10/11/2014)
+fix
+	Lorsque qu'on voulait entrer la formule 1/0.5 dans la calculatrice, une erreur survenait quand on tapait le caractère 0.
+	Lorsque Yapbam était installé dans un dossier protégé en écriture, il était impossible d'effacer certaines préférences (le réglage du proxy, par exemple).
+
+version	0.17.6 (20/10/2014)
+fix
+	yapbam.sh ne fonctionnait plus sur MacOS depuis la version 0.17.4.
+
+version	0.17.5 (14/10/2014)
+improvement
+	Ajout d'un dialogue de confirmation lors de la création d'un nouveau fichier de données.
+fix
+	Le calcul automatique de la date de valeur en fonction du mode ne se faisait pas dans certains cas lors de la saisie de rafale d'opérations. 
+
+version	0.17.4 (13/09/2014)
+improvement
+	La police de caractères peut à présent être choisie dans le dialogue des préférences.
+fix
+	Quelques bugs mineurs relatifs au filtage sur les commentaires des transactions.
+	Problème de lancement via un lien symbolique vers le script shell yapbam.sh sur certains systèmes Linux.
+
+version	0.17.3 (17/06/2014)
+improvement
+	Le dialogue de création de transfert permet à présent d'éditer le libellé et le commentaire des opérations.
+fix
+	Bug introduit en 0.17.2 : Créer un nouveau transfert alors que le graphique d'historique du solde était affiché causait une erreur.
+
+version	0.17.2 (09/06/2014)
+improvement
+	Le compte sélectionné par défaut lors de la création d'une opération tient à présent compte du contexte. Par exemple, lorsqu'on est sur l'onglet "Relevés de compte", et qu'on crée une opération, le compte sélectionné est celui du relevé.
+	Lors de la création d'un nouveau transfert, le compte de destination est à présent pré-sélectionné en fonction de sa probabilité dans l'historique des transferts.
+	Presser la touche "Majuscule" en choisissant un compte dans le menu "Filtre" permet de supprimer le compte du filtre. 
+fix
+	Bug introduit en 0.17.0 : Lors de la première importation d'un fichier, il était possible de lancer l'import sans fixer les correspondances entre les colonnes du fichier importé et les attributs des opérations. L'import se terminait alors par une erreur.
+
+version	0.17.1 (01/06/2014)
+improvement
+	Le nombre d'opérations par compte est déplacé de l'onglet "Administration/Gestion des comptes" vers l'onglet "Bilan des comptes". Cet onglet affiche à présent le nombre total d'opérations tous comptes confondus.
+	Ajout d'une colonne contenant le nombre d'opérations non pointées dans l'onglet "Bilan des comptes".
+fix
+	Bug introduit en 0.17.0 : Importer un fichier avec des cellules vides dans la colonne "montant" provoquait une erreur.
+
+version	0.17.0 (01/05/2014)
+improvement
+	Il est à présent possible de choisir le séparateur des décimales dans l'import. Les montants précédés d'un + sont à présent acceptés.
+	Le compte sélectionné par défaut dans l'onglet "Relevés de compte" est à présent celui sélectionné dans le filtre.
+	L'assistant d'édition des opérations peut à présent proposer le montant (comportement réglable dans les préferences).
+	L'assistant d'édition des opérations est à présent désactivé lors de la modification d'une opération existante. Ceci permet d'éviter de modifier par erreur le moyen de paiement ou le montant en changeant le libellé.
+fix
+	Sous le thème Swing, la couleur de fond de la colonne "Lié à" du dialogue d'import était incorrecte.
+	Quand on confirmait l'archivage dans un fichier standard (pas un fichier d'archive), cela provoquait une erreur.
+
+version	0.16.10 (25/04/2014)
+fix
+	Avec certains thèmes, dans l'onglet "Historique du solde", la date n'était pas au bon format et n'était pas de la même couleur de fond que le reste de la ligne.
+improvement
+	Dans le tableau de l'historique du solde et dans l'onglet "relevés de comptes", les colonnes ont le même alignement que dans la table des opérations (montants à droite, libellé à gauche, reste centré).
+
+version	0.16.9 (22/04/2014)
+fix
+	Bug introduit en 0.16.8 : Suivant les réglages des préférences, dans l'onglet d'administration, effectuer un tri des opérations périodiques sur la colonne "commentaire" pouvait provoquer une erreur.
+	
+version	0.16.8 (21/04/2014)
+fix
+	Bug introduit en 0.16.7 : Dans l'édition d'une sous-opération, une erreur survenait lorsqu'on effaçait le montant puis qu'on choisissait un libellé dans le menu déroulant.  
+	Contournement d'un bug de java 8 qui causait un plantage de Yapbam après sa fermeture sur certains systèmes Linux.
+	La couleur de sélection de la table des opérations de l'onglet "Historique du solde" était incorrecte quand cette table utilisait les couleurs de fond de l'onglet "Opérations".
+	Parfois, quand les préférences d'apparence étaient changées, le graphique d'historique du solde était erroné et Yapbam devenait très lent. 
+improvement
+	Les recettes et les dépenses peuvent à présent être présentées dans des colonnes séparées dans la table des opérations de l'onglet "Historique du solde".
+	Les préférences de séparation des colonnes recettes/dépenses de l'onglet "Opérations" est réutilisé pour présenter les opérations périodiques dans l'onglet d'administration.
+
+version	0.16.7 (06/04/2014)
+fix
+	La catégorie "indéfinie" était ignorée lorsqu'on la sélectionnait dans le dialogue de filtre personnalisé.
+	Bug introduit en 0.16.6 : Les opérations de catégorie "indéfinie" étaient systématiquement ignorées quand on activait le filtrage sur les catégories.
+	Contournement d'un bug de Java 8 qui provoquait une erreur lors de l'ouverture du dialogue de création d'opération périodique.
+	Quand le bouton "Suivant" était cliqué dans le dialogue "Saisie d'opérations en rafale", le champ "Relevé" n'était jamais rempli, même lorsque l'option "Remplir automatiquement l'identifiant du libellé" était sélectionnée dans les préférences.
+	Lors de l'édition d'une sous opération, la sélection d'un libellé prédéfini remettait le montant de la sous-opération à 0.
+improvement
+	Les comptes sont à présent triés par ordre alphabétique dans le menu de l'onglet relevé de comptes.
+
+version	0.16.6 (20/03/2014)
+improvement
+	Les comptes sont à présent triés par ordre alphabétique dans le menu "Filtre" et dans les dialogues de création/édition d'opérations.
+fix
+	Le tri alphabétique des catégories est à présent correct (ex : a est avant B). 
+
+version	0.16.5 (09/03/2014)
+improvement
+	Les outils (calculatrice et convertisseur de devise) peuvent à présent être utilisés dans les dialogues (par exemple pendant la saisie d'une opération).
+	Dans le convertisseur de devises, les devises sélectionnées sont mémorisées entre deux lancements de l'application. La table des devises peut à présent être cachée afin de réduire la taille de la fenêtre.
+fix
+	Sauvegarder les données dans un fichier protégé en écriture pouvait, parfois, causer une erreur. 
+	
+version	0.16.4 (01/03/2014)
+fix
+	Bugs mineurs dans l'onglet "Historique du solde".
+	Dans les préférences, supprimer l'affichage des commentaires dans une colonne séparée de la liste des opérations provoquait un plantage quand cette colonne faisait partie des critères de tri.
+
+version	0.16.3 (26/02/2014)
+fix
+	Régler le séparateur à " ou \ dans le dialogue d'importation de données causait une erreur. 
+improvement
+	Ajoute la possibilité de lancer l'application directement avec la commande java -jar path/App/yapbam.jar (path est le répertoire d'installation de Yapbam).
+	Ajoute la possibilité de zoomer sur le graphique de l'évolution du solde.
+
+version	0.16.2 (18/01/2014)
+fix
+	Exclure des comptes dans l'onglet "Bilan des comptes" quand la table était triée donnait des montants erronés dans la ligne de totaux.
+
+version	0.16.1 (18/01/2014)
+fix
+	La défaillance des services de Dropbox (ex : erreur Http 500) entrainaît une erreur dans l'application.  
+improvement
+	Ajoute la possibilité d'exclure des comptes de la ligne de totaux de l'onglet "Bilan des comptes".
+
+version	0.16.0 (26/12/2013)
+fix
+	Correction de traductions anglaises et portuguaises.
+	La table du panneau de réglage de l'apparence de la table des opérations était incorrecte quand la taille de la police n'était pas 12.
+	Lorsque le libellé, la catégorie, etc ... d'une opération ou d'une sous-opération était plus grand que la colonne dans une table des opérations, l'affichage était incorrect quand on affichait les sous-opérations.
+	Le titre des deux dernières colonnes du convertisseur de devises étaient erronnés.
+improvement
+	Ajoute la possibilité d'archiver les anciennes opérations.
+	Ajoute la possibilité, dans les preférences, de régler la couleur de fond dans l'onglet "Historique du solde".
+	Ajoute la possibilité, via les préférences, de présenter les montants des recettes et des dépenses dans des colonnes séparées dans l'onglet "Opérations".
+	Dans le convertisseur de devises, la liste des pays utilisant une devise s'affiche quand on survole celle-ci dans le tableau des devises.
+	Le convertisseur de devises peut être alimenté par Yahoo, ce qui augmente considérablement le nombre de monnaies disponibles.
+
+version	0.15.5 (19/10/2013)
+fix
+	Les raccourcis de menu utilisaient la touche CTRL sur Macintosh (au lieu de la touche "pomme").
+	Un bug dans le cryptage des fichiers protégés par mot de passe rendait le décryptage impossible sous Android (l'application Android est en cours de développement).
+improvement
+	Dans le tableau des "Opérations" de l'onglet "Historique du solde", les lignes déclenchant des alertes sont à présent surlignées en rouge.
+	Plusieurs optimisations en terme de vitesse et de consommation mémoire.
+	Une meilleure gestion des fichiers non supportés (En particulier, les fichiers encodés avec de futures versions de l'algo seront reconnus comme non supportés et plus comme corrompus).
+
+version	0.15.4 (09/06/2013)
+fix
+	Bug introduit en 0.15.3: Le dialogue "Filtre personnalisé" ne s'affichait pas correctement sur les petits écrans.
+	L'espacement des lignes dans le dialogue "Générer les opérations périodiques" était incorrect quand la police de caractère n'était pas celle par défaut. 
+
+version	0.15.3 (02/06/2013)
+improvement
+	Ajoute, dans le mode pointage de l'onglet "Relevés de compte", un champ permettant de saisir le solde final du relevé. Une fois ceci renseigné, le solde final comporte son écart avec cette cible.
+fix
+	Etablir une connexion avec un nouveau compte Dropbox derrière un proxy authentifié provoquait une erreur quand les données d'authentification étaient mal renseignées dans les préférences. 
+	Quand l'onglet "Opérations" était le premier, le menu "Fichier / Inmprimer..." était grisé au démarrage. Changer d'onglet puis revenir sur "Opérations" réglait le problème. 
+
+version	0.15.2 (20/05/2013)
+fix
+	Le comportement de l'application face à des fichiers de format inconnu était très perfectible. Dans certains cas extrêmes cela pouvait conduire à la destruction des données. 
+	
+version	0.15.1 (11/05/2013)
+fix
+	L'import de fichiers CSV dont les cellules étaient délimitées par des guillemets ne fonctionnait pas.
+	Les fichiers exportés au format CSV n'étaient pas correctement encodés quand des cellules contenaient des séparateurs de cellule ou des double quotes.
+
+version	0.15.0 (27/04/2013)
+fix
+	L'ouverture d'un fichier inexistant via le menu "Fichier/Fichiers récents" provoquait une erreur. 
+improvement
+	Yapbam peut être connecté à un compte Dropbox de manière à partager vos données entre plusieurs ordinateurs via Internet, et bénéficier des fonctions de sauvegarde de Dropbox.
+	Pour aider à maintenir Yapbam à jour, la vérification de la présence de mises à jour est systématiquement forcée une fois par mois.
+	Ajout d'une case à cocher "Ignorer la date de fin" dans l'onglet "Historique du solde". Lorsque cette case n'est pas cochée, le zoom du graphique est réglé en fonction de la plage de date de valeurs autorisée par le filtre.
+
+version	0.14.5 (24/03/2013)
+fix
+	Le menu "Fichier/Fichiers récents" était systématiquement inactif au lancement de Yapbam quand aucun fichier n'était ouvert.
+	Certaines traductions en allemand ou portuguais étaient erronées. 
+improvement
+	Dans l'onglet "Opérations", la colonne "S/O", qui permet d'afficher ou de masquer les sous-opérations, a maintenant une taille fixe.
+
+version	0.14.3 (24/02/2013)
+improvement
+	Ajoute un bouton pour renommer les relevés de comptes dans l'onglet "Relevés de compte".
+	Ajoute la mémorisation des derniers fichiers ouvert dans un sous-menu du menu "Fichiers".
+fix
+	Dans le dialogue de création/modification de chéquier, utiliser la flêche haute pour incrémenter les numéros des chèques provoquait une erreur.
+	Au lancement de Yapbam, dans le cas où le dernier fichier ouvert était protégé par mot de passe, cliquer sur "Annuler" dans le dialogue demandant du mot de passe provoquait une erreur. 
+	
+version	0.14.2 (04/02/2013)
+fix
+	Contournement d'un bug de Java qui provoquait une erreur avec Java 1.7.0_13 lors de l'ouverture du dialogue de création d'opération périodique.
+
+version	0.14.1 (03/02/2013)
+improvement
+	Ajout d'un bouton permettant de permuter les devises dans le convertisseur de devises.
+	Dans la calculatrice, le résultat est à présent sélectionnable et peut être copié avec le raccourci standard (<ctrl-C> sous Windows).
+fix
+	Taper une virgule comme premier caractère d'un champ de saisie de montant provoquait une erreur.
+	Les notes sur un compte étaient, dans certains cas, ignorées lors de la lecture du fichier de données.
+
+version	0.14.0 (01/02/2013)
+improvement
+	La taille des caractères est désormais modifiable (uniquement avec l'apparence "Nimbus").
+	Ajout d'un rubrique "notes" dans les comptes, visible dans l'onglet "Bilan des comptes".
+fix
+	Dans l'onglet "Budget", quand on sélectionnait le total d'une ligne dont une colonne était déjà sélectionnée, le bouton "Filtre" n'était pas grisé. Cliquer sur celui-ci provoquait alors une erreur.
+	Une erreur survenait quand on choisisait le menu "Fichier/Nouveau" pendant l'édition d'une catégorie dans l'onglet "Administration/Catégories".
+
+version	0.13.6 (15/01/2013)
+fix
+	Le dialog de sélection de fichier pouvait causer des erreurs quand l'une des apparences "Windows", "Windows classic" ou "CDE Motif" était active.
+
+version	0.13.4 (13/01/2013)
+fix
+	Problèmes de gestion mémoire pouvant entrainer des lenteurs, et, dans les cas extrêmes, des erreurs. 
+	Tenter de lire ou d'écriture un fichier protégé causait une erreur.
+	Régression : Quand, dans un dialogue de sélection de fichier, vous sélectionniez un raccourci (lien symbolique), Yapbam ne suivait pas le lien pour lire (ou sauver vers) la cible du lien, mais lisait/sauvait directement dans le fichier raccourci. 
+
+version	0.13.3 (02/01/2013)
+fix
+	Les versions avant la 0.12.0 permettaient de créer des opérations périodiques sans information sur la périodicité; C'était une anomalie. Les versions suivantes de Yapbam ne permettaient plus de relire les fichiers contenant de telles opérations, ce qui était ... une catastrophe.
+	Le dialogue "Filtre personnalisé" n'était pas correctement initialisé quand un filtre sur la date de valeur était préalablement fixé.
+
+version	0.13.2 (22/12/2012)
+fix
+	Plantage aléatoire lorsqu'on quitte Yapbam sans avoir sauvegardé un fichier qu'on vient de créer.
+	Plantage aléatoire lorsqu'on quitte Yapbam après avoir ouvert la calculatrice.
+
+version	0.13.1 (11/12/2012)
+fix
+	Lorsque Yapbam était installé dans un dossier vérouillé en écriture, ou installé à un emplacement protégé par l'<a href="http://fr.wikipedia.org/wiki/User_Account_Control">UAC de Windows</a>, comme le dossier "Program files", et qu'une opération périodique avait été éditée, une erreur survenait à la fermeture de l'application.
+	Dans l'édition des opérations périodiques, on pouvait valider une opération non activée avec une date de fin antérieure à la prochaine échéance, ce qui provoquait une erreur.
+	Erreurs d'arrondis dans la calculette.  
+
+version	0.13.0 (09/12/2012)
+improvement
+	Ajout d'une calculatrice dans le menu "Outils".
+	On peut à présent saisir une formule dans les champs de montant (exemple 3*45 au lieu de 135).
+fix
+	Le menu "Opérations/Convertir en opération périodique" provoquait une erreur.
+
+version	0.12.1 (03/12/2012)
+fix
+	Un bug introduit dans la version 0.12.0 : Quand une opération périodique atteignait sa date de fin, cela provoquait une erreur.
+
+version	0.12.0 (02/12/2012)
+fix
+	Il était possible de créer une opération périodique avec une date de prochaine opération postérieure à la date de fin de l'opération périodique.
+	Lorsqu'on annulait une opération dans la génération des opérations périodiques, on qu'on en modifiait le montant, le récapitulatif des montants générés (ligne au dessous de la liste des opérations générées) n'était pas mis à jour.
+	Lorsqu'on changeait l'ordre des colonnes de l'onglet "Bilan des comptes", la ligne "Total" restait figée.
+	Changer la casse d'une lettre dans le nom d'un compte provoquait une erreur.
+	La sauvegarde du filtre à la fermeture de Yapbam provoquait une erreur si le filtre comportait une restriction sur le numéro ou le relevé, mais pas sur le libellé d'opération.
+improvement
+	Le dialogue de génération des opérations périodiques est maintenant redimensionnable. La table des opérations générées peut-être triée, et un bouton permet d'éditer l'opération sélectionnée. Les opérations peuvent à présent être reportées.
+	La table "Opérations" de l'onglet "Historique du solde" peut à présent être triée de l'opération la plus récente vers la plus ancienne.  
+
+version	0.11.11 (17/11/2012)
+fix
+	Dans le filtre personnalisé, entrer une valeur dans le champ "Pointage" puis décocher la case "Opérations pointée" provoquait une erreur à la validation du dialogue.
+	Dans l'onglet d'administration des comptes, l'édition du solde initial et des niveaux d'alerte utilisait le '.' comme séparateur décimal.
+	Dans l'édition d'une opération périodique, changer la fréquence d'une opération mensuelle en journalière, puis, de nouveau, en mensuelle provoquait une erreur.
+	Quand l'apparence sélectionnée dans "Fichier/Préférences/Apparence" n'était pas "Nimbus", les nombres n'étaient pas correctement formatés dans l'onglet "Relevé de compte". Les dates n'étaient pas non plus affichées avec le même format que dans les autres onglets.
+
+version	0.11.10 (06/11/2012)
+fix
+	Un bug introduit par la version 0.11.9 : Quand on sélectionnait le menu "Fichier/Nouveau" et que les données courantes n'étaient pas sauvegardées, et qu'on choisissait de les sauvegarder dans le dialogue qui s'affichait, cela provoquait une erreur.
+	Lorsqu'on supprimait ou renommait le fichier importé entre sa sélection et la validation du dialogue, une erreur se produisait. Ça pouvait aussi être le cas quand on supprimait des lignes puis qu'on allait à la dernière ligne dans le dialogue d'import. 
+
+version	0.11.9 (01/11/2012)
+fix
+	Quand le solde initial d'un compte était modifié dans l'onglet d'administration, le changement n'était pas reporté dans l'onglet "Bilan des comptes", ni dans les alertes de l'onglet "Historique du solde".
+	La modification du numéro de chèque lors de l'édition d'une opération n'était parfois pas prise en compte.
+	Les mots de passe contenant des accents n'étaient pas supportés.
+	Dans le panneau d'administration des comptes, lorsque la liste des comptes était triée, le bouton "supprimer" pouvait proposer la suppression d'un compte différent de celui sélectionné.
+	Lorsqu'un libellé contenait un &lt;, ce caractère et les suivants n'apparaîssaient pas dans l'onglet "opérations". 
+
+version	0.11.8 (18/09/2012)
+improvement
+	Il est à présent possible de définir des sous-catégories et de visualiser les statistiques et le budget en groupant les sous-catégories d'une même catégorie.
+fix
+	Lorsqu'on cliquait sur le bouton "Ouvrir un fichier exemple" de l'écran d'accueil, il n'y avait pas d'avertissement si des modifications n'avaient pas été sauvegardées. Dans ce cas, elles étaient perdues.
+	Lorsque Yapbam était installé dans le répertoire "Programmes" sous Windows, l'import/export plantait. 
+
+version	0.11.7 (09/09/2012)
+fix
+	Le démarrage échouait lorsque Yapbam était installé dans le répertoire "Programmes" sous Windows.
+	Dans l'onglet "Gestion des opérations périodiques" de l'onglet "Administration", Il y a avait quelques fautes d'orthographe, et la couleur de fond de la colonne "Active" était mauvaise quand la table était triée.
+	Dans le dialogue de génération des opérations périodiques, le champ date devenait parfois trop petit pour afficher la date.
+improvement
+	Ajout de la possibilité de créer des opérations périodiques sur base annuelle.
+
+version	0.11.6 (26/08/2012)
+fix
+	Certains libellés des versions allemandes et portuguaises n'étaient pas traduits. 
+
+version	0.11.5 (03/08/2012)
+improvement
+	Le convertisseur de devises est à présent disponible hors ligne. Dans ce cas, les derniers taux téléchargés sont utilisés.
+fix
+	Sur les systèmes ne permettant pas l'ouverture d'un navigateur par Yapbam, cliquer sur les boutons d'accès aux questions fréquentes et au tutoriel dans l'écran d'accueil provoquait une erreur. 
+
+version	0.11.4 (15/07/2012)
+fix
+	Dans le dialogue de préférence, il était possible d'entrer un nom de serveur proxy contenant le caractère ':'. Ceci provoquait une erreur lorsqu'on ré-ouvrait le dialogue de préférence. Cette erreur empéchait de corriger le nom du serveur proxy.
+	Dans l'onglet d'administration, supprimer une catégorie alors qu'on l'éditait pouvait causer une erreur.
+
+version	0.11.3 (06/06/2012)
+improvement
+	Il est à présent possible de mémoriser l'ordre de tri des lignes de tableaux entre deux exécutions de Yapbam.
+	Les lignes des tableaux de la rubrique "Gestion des comptes" de l'onglet "Administration" peuvent à présent être triées. Il en est de même pour le "Bilan des comptes".
+	Il est à présent possible de supprimer une clef de tri dans les tableaux (en cliquant plusieurs fois sur l'entête de la colonne qui sert de clef de tri). 
+	Dans le convertisseur de devises :<ul><li>le nom de la devise et son code sont à présent dans des colonnes distinctes.</li><li>Le tableau des devises peut être trié. Par défaut, il est trié, de même que les menus, dans l'ordre des noms de devises et plus, comme auparavant, de leurs codes.</li><li>La devise cible peut être sélectionnée en cliquant sur sa ligne dans le tableau.</li></ul>
+fix
+	Dans le convertisseur de devises les taux de conversion n'étaient pas affichés en respectant le format décimal du pays (exemple, en France, le point était utilisé comme séparateur décimal).
+	Dans l'onglet "Relevé de comptes", le tri des montants était alphanumérique au lieu de numérique.
+	Correction de bugs introduits en 0.11.2 :<ul><li>Lorsqu'on ouvrait un fichier protégé par mot de passe, et qu'on cliquait sur "Annuler" dans le dialogue de demande de mot de passe, cela provoquait une erreur.</li><li>La lecture d'un fichier ne contenant aucune opération provoquait une erreur.</li><li>Sous Linux, des boites de dialogues d'attente étaient systématiquement et brièvement affichées dans le coin de l'écran lors de la lecture, de l'écriture des données ainsi que lors des accès Internet</li></ul>
+
+version	0.11.2 (28/05/2012)
+improvement
+	Les exports au format csv ne contiennent plus de séparateurs de milliers (Excel ne reconnait pas les chaînes de caractères qui en contiennent comme des nombres).
+fix
+	Dans les pays où l'espace est le séparateur des milliers (France, Suède, etc...), les montants incluant ce séparateur étaient rejetés lors de l'import (Ceci était dû à <a href="http://bugs.sun.com/view_bug.do?bug_id=4510618">un bug de Java</a>).
+
+version	0.11.1 (12/05/2012)
+fix
+	La génération des opérations périodiques ne fonctionnait plus dans la version 0.11.0.
+
+version	0.11.0 (11/05/2012)
+improvement
+	Introduit un nouveau mode pointage, plus simple, plus clair (le relevé en cours de pointage est affiché sous la liste des opérations à pointer) et plus puissant (on peut pointer plusieurs opérations à la fois, dépointer celles qui l'ont été par erreur, etc ...).
+	Ajout d'un message d'attente lors de la connexion à la BCE par le convertisseur de devises.
+
+version	0.10.2 (25/04/2012)
+improvement
+	Ajoute un item au menu "Opérations" permettant de saisir des transferts entre comptes.
+	Les couleurs de fond de la table des opérations sont à présent paramétrables.
+fix
+	Il était possible, dans l'onglet "Budget", de sélectionner des lignes/colonnes dans les totaux. Cliquer sur le bouton "Filtre" provoquait alors une erreur.
+
+version	0.10.1 (02/04/2012)
+fix
+	Supprime le panneau de préférence des sauvegardes automatiques (qui sont encore en cours de développement).
+	La validation des préférences d'édition des opérations provoquait une erreur lorsque le champ "Personnalisé" contenait un format incorrect.
+	Lorsque Yapbam était installé dans un dossier vérouillé en écriture, ou installé à un emplacement protégé par l'<a href="http://fr.wikipedia.org/wiki/User_Account_Control">UAC de Windows</a>, comme le dossier "Program files", le convertisseur de devises ne fonctionnait pas.
+
+version	0.10.0 (30/03/2012)
+improvement
+	La vue budgétaire peut à présent présenter une ligne et/ou une colonne de totaux.
+
+version	0.9.13 (06/03/2012)
+fix
+	Lorsque Yapbam était installé dans un dossier vérouillé en écriture, ou installé à un emplacement protégé par l'<a href="http://fr.wikipedia.org/wiki/User_Account_Control">UAC de Windows</a>, comme le dossier "Program files", des messages d'erreur apparaissaient au lancement et à l'arrêt de Yapbam, ainsi que lors des mises à jour.
+
+version	0.9.12 (12/02/2012)
+fix
+	Lors de l'édition de sous-opérations, cliquer sur la case à cocher "Recette" lorsque le champ "montant" était vide provoquait une erreur.
+	Double cliquer sur certaines listes (exemple, la liste des opérations) avec la touche "ctrl" enfoncée, pouvait provoquer une erreur ou laisser les boutons "éditer/supprimer" activés alors qu'aucune liste de la liste n'était sélectionnée.
+	Lors de l'édition d'une opération périodique ayant une date de fin, passer d'une opération de journalière à mensuelle provoquait une erreur. 
+
+version	0.9.11 (25/01/2012)
+fix
+	Quand on supprimait le mode de paiement en bas de la liste dans l'onglet d'administration des comptes, les boutons d'édition et de suppression de mode n'étaient pas désactivés. Cliquer sur l'un d'eux à ce moment causait une erreur.
+	Quand on supprimait un compte, mode ou une catégorie autorisés par le filtre, Yapbam se retrouvait parfois dans un état incohérent. L'affichage du dialogue création d'une opération pouvait se terminer par une erreur.
+	Lors de la génération des opérations périodiques, la date de fin des opérations dont la fréquence était exprimée en jour était ignorée.
+
+version	0.9.10 (09/01/2012)
+improvement
+	Lorsqu'on duplique une opération pointée, le numéro de relevé est mis à blanc (sauf si la fonction de remplissage automatique du numéro de relevé est activé, auquel cas, il est renseigné automatiquement).
+fix
+	Quand on validait le dialogue des préférences, Yapbam redémarrait systématiquement, même quand ce n'était pas utile.
+	Le convertisseur de devises ne fonctionnait pas quand la langue sélectionnée était l'allemand.
+
+version	0.9.9 (02/01/2012)
+improvement
+	Yapbam est à présent également disponible en allemand (un grand merci à Jean-René Thies).
+	Ajout d'un bouton "Générer les opérations périodiques" dans la table des opérations et dans l'onglet d'administration des opérations périodiques.
+fix
+	Dans le dialogue de saisie des sous-opérations, on pouvait valider une sous-opération sans libellé en effaçant le libellé et en cliquant très vite sur le bouton "Valider".
+	Quand on entrait une valeur incorrecte dans le champ "Personnalisé" dans l'onglet "Edition des opérations" des préférences, on avait le temps de cliquer sur le bouton "Valider" avant qu'il ne devienne grisé.
+	Dans certains dialogues lorsqu'on cliquait sur le bouton "Valider" alors qu'un champ de date ou de montant était édité, le clic ne validait pas la saisie.
+
+version	0.9.8 (18/12/2011)
+improvement
+	Lors de la création en masse d'opérations, la date est maintenant conservée lorsqu'on clique sur le bouton "Suivant".
+fix
+	Certains séparateurs (par exemple \) n'étaient pas supportés dans l'import de fichiers. Les utiliser provoquait le plantage du dialogue d'import de fichiers.
+	Utiliser des noms de comptes, mode de paiement ou de catégories commençant ou terminant par des espaces pouvait provoquer des plantages dans les dialogues de création de ces objets.
+	Les icônes et messages d'alerte (seuil de solde ou opérations périodiques à générer) étaient parfois affichés sur le mauvais onglet.
+	Quand, dans un dialogue de sélection de fichier, vous sélectionniez un raccourci (lien symbolique), Yapbam ne suivait pas le lien pour lire (ou sauver vers) la cible du lien, mais lisait/sauvait directement dans le fichier raccourci.
+
+version	0.9.7 (13/11/2011)
+improvement
+	Il est désormais possible d'afficher les soldes relatifs dans l'onglet des transactions (Il suffit de cliquer sur un solde pour en faire la référence pour les autres soldes).
+	Les composants de l'onglet "opérations" sont réarrangés. Les boutons de création/édition/suppression d'opérations sont à présent sous la liste, comme dans les listes affichées dans l'onglet "Administration".<br/>Ajout d'un bouton pour créer les opérations en masse. Le menu de sélection des colonnes est maintenant en haut à droite, ce qui semble une position plus classique (idem dans la vue relevé de compte).
+fix
+	La saisie d'une opération datée d'avant le 1/1/1970 provoquait des erreurs.
+	Le filtre n'était jamais enregistré lorsque les données n'étaient pas enregistrées avant la fermeture de la fenêtre de Yapbam.
+	L'importation d'un fichier vide provoquait une erreur.
+	Cliquer sur un bouton d'aide provoquait un plantage si java était dans l'incapacité d'ouvrir un navigateur web.
+
+version	0.9.6 (23/10/2011)
+fix
+	L'affichage de l'historique du solde d'un compte possédant un solde initial nul et uniquement des opérations de montant nul provoquait une erreur.
+	Correction d'un bug dans l'assistant de saisie des sous-opérations : Sélectionner un libellé qui n'apparraissait&nbsp;dans aucune opération du compte de l'opération éditée entrainait le plantage de l'assistant.
+
+version	0.9.5 (16/10/2011)
+improvement
+	La sauvegarde du filtre entre deux lancements de Yapbam est de nouveau disponible pour les fichiers de données cryptés.
+	Ajout de messages d'erreur spécifiques en cas d'échec de la sauvegarde de l'état au démarrage et des préférences.
+fix
+	Sous windows, lorsque les fichiers situés dans le répertoire data étaient cachés, l'état et/ou les préférences n'étaient pas sauvegardés. De même, le convertisseur de devise ne fonctionnait pas.
+
+version	0.9.4 (02/10/2011)
+fix
+	L'export ne fonctionnait pas si on sélectionnait les commentaires dans les champs à exporter.
+	Règle un problème avec le JDK 1.7 : La fermeture de Yapbam ne fermait pas le processus de la machine virtuelle java.
+
+version	0.9.3 (25/09/2011)
+fix
+	Correction d'un bug dans la saisie des montants, pour les pays où le séparateur de milliers est le point (Belgique, par exemple). Lorsqu'on saisissait un nombre sans unité monétaire (exemple 5,25), ce nombre était transformé en un nombre différent à la sortie du champ (exemple 525&nbsp;€).
+	Correction d'un bug dans la vue "Relevé de comptes" : Lorsqu'on ouvrait plusieurs comptes pendant l'éxécution de Yapbam, l'édition des opérations entrainait l'apparition du dialogue d'édition de l'opération plusieurs fois.
+
+version	0.9.2 (18/09/2011)
+fix
+	Correction d'un bug majeur de la version 0.9.0. Quand Yapbam était configuré pour mémoriser le filtre entre deux lancements, et que Yapbam était quitter alors que le fichier ouvert était protégé par un mot de passe, il était impossible de redémarrer Yapbam. La seule façon de réouvrir le fichier était de supprimer la ligne "filter" dans le fichier Data/.yapbam.<br/>Afin de régler le plus rapidement possible ce problème, et dans la mesure où il est causé par une erreur de conception de la sauvegarde du filtre, cette fonctionnalité est désactivé, dans cette version, pour les fichiers protégés par mot de passe. Elle sera réintroduite dans une version future.
+	Correction d'un bug dans l'importation : Lorsque le fichier importé contenait des erreurs et que la dernière colonne du fichier n'était attachée à aucune attribut d'opération, l'importation plantait.
+
+version	0.9.1 (16/09/2011)
+fix
+	Correction d'un bug important : L'exportation des opérations était impossible si une exportation avait été déjà effectuée avec une version antérieure de Yapbam.
+	Correction d'un bug mineur dans la saisie des modes de paiement : Le bouton "valider" n'était pas toujours correctement invalidé quand les champs n'étaient pas renseignés. La validation dans cette configuration provoquait une erreur.
+
+version	0.9.0 (14/09/2011)
+improvement
+	Ajout d'un onglet dans le dialogue des préférences pour régler quelles informations sont conservées entre deux exécutions de Yapbam.
+	Ajout de la possibilité de mémoriser le filtre entre deux exécutions de Yapbam.
+	Ajout d'un champ "commentaire" aux opérations.
+	Ajout d'un mode de création en masse des opérations.
+	Modification du script yapbam.sh pour permettre aux utilisateurs de lancer yapbam plus facilement sur MacOS.
+fix
+	Lorsqu'il manquait des colonnes en fin de certaines lignes importées, l'importation plantait.
+	Lorsque, dans le dialogue de saisie des opérations, on choississait un libellé prédéfini alors que le champ date était vide, une erreur, sans aucune conséquence, était remontée (apparition du dialogue d'erreur).
+	Le dialogue de création de mode de paiement permettait de cocher la case "Utiliser un chéquier" puis de décocher "Utilisable pour les dépenses". La validation dans cette configuration provoquait une erreur.
+	Correction d'un bug mineur dans le dialogue de création des sous-opérations: Quand on choisissait un libellé en cliquant dans le menu des libellés suggérés, la description était bien reportée dans le champ MAIS, quand on validait la saisie, le libellé enregistré était celui saisi avant la valeur prédéfinie !
+	Saisir une expression régulière incorrecte dans la dialogue "Filtre personnalisé" causait une erreur quand on confirmait la saisie.
+
+version	0.8.8 (03/08/2011)
+fix
+	Dans la table des opérations de l'onglet "Historique du solde" : Lorsqu'une opération était modifiée, la table était mise à jour mais présentait des données incorrectes.
+	L'import échouait lorsque le fichier comportait plus de neuf colonnes et contenait des valeurs incorrectes.
+	Les modifications d'opérations périodiques faite dans l'administration n'étaient pas reportées dans le tableau sans redémarrage de Yapbam.
+
+version	0.8.7 (23/07/2011)
+improvement
+	Le dialogue "Filtre personnalisé" est moins haut. Il est à présent compatible avec les écrans de 768px de haut.
+fix
+	Dans les dialogues :<ul><li>Le bouton "Annuler" des dialogues de saisie des catégories et des comptes validait la saisie !</li><li>Dans certains dialogues, on pouvait entrer une valeur incorrecte et valider en cliquant très rapidement le bouton valider après avoir saisie la valeur incorrecte.</li></ul>
+	Dans l'onglet d'administration :<ul><li>Les boutons "Editer", "Dupliquer" et "Supprimer" n'étaient pas grisés lorsqu'aucune information n'était sélectionnée. Parfois cela pouvait entrainer des plantages.</li><li>Effacer le contenu d'une cellule "solde initial" dans l'onglet de gestion des comptes provoquait un plantage.</li></ul>
+	Dans le dialogue d'édition des opérations : Cocher la case "recette" quand le champ "montant" était vide provoquait une erreur.
+	Dans le dialogue "Filtre personnalisé" : Le bouton "Effacer tous les filtres" n'effaçait pas le filtre sur la nature recette/dépense des opérations.
+
+version	0.8.6 (05/06/2011)
+fix
+	Déplacer un onglet hors de la zone des onglets provoquait une erreur.
+
+version	0.8.5 (31/05/2011)
+fix
+	L'assistant de saisie pouvait planter lorsqu'un filtre était activé et que la description choisie ne figurait pas dans les opérations filtrées.
+
+version	0.8.4 (30/05/2011)
+improvement
+	L'ordre des onglets peut à présent être modifié.
+	Ajout de raccourcis clavier pour éditer ou dupliquer une opération.
+	Ajout d'un menu pour pointer une opération.
+	Réduit les menus contextuels dans l'onglet "Statistiques" aux items utiles (par exemple : plus de "Enregistrer sous". Il créait un fichier illisible).
+fix
+	Si le fichier ouvert à l'ouverture de Yapbam présentait une alerte sur le solde, celle-ci n'était pas immédiatement affichée dans l'onglet "Historique du solde".
+	Sélectionner une opération dans les onglets "Relevés de compte" ou "Historique du solde" laissait les menus Effacer/Modifier/Dupliquer grisés.
+	Correction de problèmes de localisation (des libellés qui n'apparaissaient pas dans la bonne langue).
+
+version	0.8.3 (08/05/2011)
+improvement
+	Ajoute un onglet de résumé des bilans de l'ensemble des comptes.
+	Ajoute une table des opération dans l'onglet "Historique du solde". Cette table récapitule les opérations triées suivant leur date de valeur et le solde restant après chacune d'elle.
+	Lorsqu'un intervalle de dates de valeur est sélectionné dans le filtre, le graphique d'évolution du solde débute et termine aux dates de valeur spécifiées dans le filtre.
+	Le mode pointage est déplacé dans la vue "Relevés de comptes". Cette vue s'enrichit des colonnes "catégorie" et "Mode", d'un menu permettant d'afficher/masquer les colonnes, et de la possibilité de trier la vue suivant la colonne de son choix.
+	Ajout d'un message de confirmation lorsque l'on exporte la vue budgétaire vers un fichier déjà existant.
+	Ajout d'options d'édition (dans le menu "Préférences") permettant la saisie automatique du relevé, d'être alerté (ou pas) lors de la modification d'une opération pointée, ou lors de l'effacement d'une opération, etc...
+fix
+	Dans la vue "Relevés de compte" :<ul><li>Lors de la modification ou de la création d'une opération, le relevé sélectionné pouvait être modifié.</li><li>Lorsque que le filtrage des opérations était activé, et qu'on changeait le relevé de compte, les opérations affichées tenaient compte du filtre.</li></ul>
+	Le mot de passe était supprimé lorsque le fichier était sauvé à nouveau.
+	L'aide ne fonctionnait pas sous Linux.
+	Le menu contextuel sur les graphiques de l'onglet "Statistiques" provoquait une erreur.
+
+version	0.8.2 (10/04/2011)
+improvement
+	Lorsque vous créez une nouvelle opération (ou opération périodique), et que le filtre n'autorise qu'un seul compte, celui-ci est maintenant automatiquement sélectionné dans le dialogue de création de l'opération.
+	D'une exécution à l'autre, les colonnes cachées de la table des opérations sont mémorisées. Les colonnes sont à présent listée dans le menu "Afficher les colonnes ..." dans le même ordre que dans la table des opérations.
+	D'une exécution à l'autre, les tailles et positions des colonnes de l'onglet "gestion des comptes" sont sauvegardées. De même pour les tableaux intervenant dans les dialogues (dans le dialogue d'édition d'une opération, par exemple), les réglages des impressions (format de papier, marges, etc ...), et les réglages de l'import/export.
+	Amélioration de l'assistant de saisie, et extension de celui-ci aux libellés de sous-opérations.
+	Ajoute l'impression basique des relevés de compte.
+fix
+	Un champ de montant vide dans un fichier importé pouvait empêcher l'import de tout le fichier.
+
+version	0.8.1 (05/03/2011)
+improvement
+	Le camembert de dépenses par catégorie est maintenant trié par libellé croissant de catégorie.
+	Ajout d'un bouton "Tutoriel" dans l'écran d'accueil.
+fix
+	Le changement de pays/langue ne changeait pas certains format de date.
+	Lorsque d'anciennes opérations n'étaient pas pointées, le relevé "Non pointé" pouvait ne pas être le plus récent dans l'onglet "Relevés de compte". Ceci rendait les soldes en début et fin de périodes faux pour les relevés situés avant le relevé "Non pointé".
+
+version	0.8.0 (04/02/2011)
+improvement
+	Ajout de nouveaux thèmes visuels (Voir le dialogue accessible par le menu "Fichier/Préférences", onglet "Apparence").<br/>Nous vous recommandons de tester l'apparence "Nimbus".
+	Ajout d'un écran de bienvenue, regroupant des raccourcis utiles et des astuces d'utilisation de Yapbam.
+	Introduction d'un nouveau mécanisme de mise à jour. Plus besoin de télécharger manuellement les mises à jour, elles s'installeront automatiquement.
+	Amélioration de l'assistant de saisie. Les choix les plus probables sont à présent présentés en premier (précédemment, les choix étaient classés par ordre alphabétique).
+	Ajout de la possibilité d'envoyer des rapports d'erreur à l'équipe Yapbam lorsqu'un problème survient.
+	Ajout d'un message d'alerte si vous tentez d'enregister un fichier de données dans le répertoire d'installation de Yapbam (ce qui pourrait provoquer la perte de vos données).
+fix
+	L'utilisation des fléches hautes et basse permettait de saisir des valeurs hors des limites autorisées.
+	Dans l'édition d'une opération, lorsque vous choisissiez un libellé avec l'assistant de saisie, et que le mode déduit impliquait l'utilisation d'un carnet de chèque, le champ numéro n'était pas correctement initialisé.
+	Créer une recette d'un montant nul pouvait provoquer des erreurs.
+	Ne plus autoriser un mode de paiment pour un type d'opération (recette/dépense) pour lequel il était précédemment utilisé pouvait provoquer des erreurs.
+	Créer une catégorie dans une sous-opération pouvait changer la catégorie de l'opération.
+	Créer une opération périodique inactive sans données de périodicité empéchait l'affichage de l'onglet d'administration.
+
+version	0.7.4 (12/12/2010)
+fix
+	Le filtrage des opérations de montant égal à une certaine valeur ne fonctionnait pas (toutes les opérations avec un montant supérieur ou égale à la valeur étaient retenues).
+	Dans le convertisseur de devises, aucune fenêtre n'apparraissait lorsque la connexion à la BCE échouait.
+	Correction de bugs mineurs dans la vue "rélevé de comptes'.
+
+version	0.7.3 (26/11/2010)
+improvement
+	Ajout d'un script de lancement pour Linux.
+fix
+	L'onglet statistique affichait des graphiques erronés depuis la 0.7.2.
+
+version	0.7.2 (23/11/2010)
+improvement
+	Amélioration mineure du mode pointage (la modification du champ date coche automatiquement "Remplacer la date de valeur par").
+	Le menu "filtre" est à présent caché dans la vue "Relevés de compte" (cette vue ne prend pas en compte le filtrage).
+	Ajout de cases à cocher "Dépenses" et "Recettes" dans le dialogue "Filtre personnalisé".
+	La structure du répertoire contenant l'application est modifiée pour correspondre à celle de PortableApps.com.
+fix
+	Correction de bugs mineurs dans le dialogue "Filtre personnalisé".
+	Sous Windows Vista, une fois l'exécution de Yapbam.exe terminée, Vista demandait si le programme avait fonctionné correctement
+
+version	0.7.1 (09/11/2010)
+improvement
+	Amélioration de performance : Les tâches d'administration sont beaucoup plus rapides que dans les versions précédentes (Par exemple, la suppression d'un compte ou d'une catégorie).
+fix
+	Dans certains pays, la prise en compte des séparateurs de milliers dans les montants de transaction était incorrecte(par exemple, en France 5 000,00 était considéré comme une valeur invalide).
+	Parfois, l'importation ne faisait ... rien ! :-(
+
+version	0.7.0 (17/10/2010)
+improvement
+	Ajout d'un onglet de consultation des relevés de comptes.
+	Lors du lancement de Yapbam, la table des transactions est automatiquement scrollée jusqu'aux opérations les plus récentes.
+
+version	0.6.7 (21/09/2010)
+fix
+	Correction d'un bug très génant dans la lecture des fichiers de données : Des opérations pouvaient être perdues lorsqu'elles utilisaient un chéquier et que le numéro d'opération n'était pas renseigné.
+
+version	0.6.6 (19/09/2010)
+improvement
+	Ajoute la possibilité de protéger l'accès aux fichiers de données par mot de passe.
+
+version	0.6.5 (10/08/2010)
+improvement
+	Ajout d'un message de confirmation lorsque l'on sauve les données dans un fichier déjà existant.
+	Amélioration dans l'importation :<ul><li>Ce dialogue permet à présent d'annuler l'importation ou de traiter uniquement les lignes sans erreur. Les champs comprenant des erreurs sont affichés en rouge pour faciliter leur identification.</li><li>Les réglages de l'importation (colonnes importées, séparateur, etc...) sont mémorisés. Vous les retrouvez lorsque vous réouvrez le dialogue d'importation.</li><li>Le décodage des montants est plus strict (Auparavant, "52g32" était décodé comme un montant de 52. A présent, la ligne est considérée comme une erreur).</li></ul>
+fix
+	Dans certains cas, le dialogue de compte rendu des erreurs d'importation ne s'affichait pas, alors qu'il aurait dû.
+	Correction de bugs dans l'onglet d'historique du solde :<ul><li>Parfois, la date courante n'était pas visible dans la fenêtre.</li><li>Parfois, en particulier lors du pointage, des alertes erronnées apparaissaient.</li></ul>
+	Correction de la bulle d'aide du panneau contenant la liste des opérations.
+
+version	0.6.4 (16/05/2010)
+improvement
+	Amélioration des alertes sur les soldes : A présent, on peut définir, pour chaque compte deux seuils. Une alerte est affichée dans l'historique du solde lorsque celui-ci n'est pas compris entre ces bornes.
+	Amélioration de l'historique du solde :<ul><li>Ajout d'un bouton pour régler la date sélectionnée à aujourd'hui.</li><li>Ajout d'un menu listant les alertes sur le solde. La sélection d'une alerte règle le filtre de manière à visualiser l'historique du compte concerné.</li></ul>
+fix
+	L'édition du solde initial dans l'onglet d'administration des comptes ne fonctionnait plus.
+	Dans la génération des opérations périodiques :<ul><li>Quand les opérations étaient éditées durant la phase de génération, les changements faits étaient  ignorés.</li><li>Les opérations avec une date d'expiration ne fonctionnaient pas correctement.</li></ul>
+	Correction d'un bug mineur dans la mise à jour de l'apparence du menu "Filtre".
+
+version	0.6.3 (24/04/2010)
+fix
+	La date sélectionnée dans l'onglet d'historique des soldes étaient fréquemment remise à la date du jour.
+improvement
+	Mise à jour des instructions d'installation.
+
+version	0.6.2 (09/04/2010)
+improvement
+	Ajout d'une alerte dans la liste des opérations lorsque des opérations périodiques sont en attente de génération.
+	Meilleure intégration à l'environnement Microsoft Windows (Ajout de l'application Yapbam.exe).
+
+version	0.6.1 (02/04/2010)
+improvement
+	Ajout de la gestion des chéquiers.
+	Ajout de menus d'accès direct aux ressources web de Yapbam (Le site de Yapbam et la page de support).
+	Améliore la vitesse de lancement (L'application démarre sans attendre la fin de la vérification de l'existence d'une nouvelle version).
+	Améliore le processus de recherche des mises à jour (La vérification peut-être interrompue si la connexion prend trop de temps).
+	Améliore l'écran d'administration des comptes.
+	Améliore la saisie des entiers (A présent seuls des caractères numériques peuvent être saisis et les flèches haute et basse augmentent ou diminuent la valeur contenue dans le champ).
+	Simplifie le dialogue de création de compte. Des utilisateurs ont rapporté que la possibilité de définir des modes dans cet écran était perturbant.
+	A l'arrivée dans l'historique du solde, positionne le graphique de façon à ce que la date sélectionnnée soit visible.
+fix
+	Yapbam avait un comportement étrange quand une date était saisie avec l'année sur un seul caractère (ex : 20/3/9).
+
+version	0.6.0 (09/03/2010)
+improvement
+	Ajoute la possibilité d'importer/exporter vers des fichiers texte.
+	Ajout d'une icône d'alerte dans l'onglet de l'historique du solde quand celui-ci présente une période de découvert dans le futur.
+	Améliore le comportement des champs de saisie de dates.
+fix
+	Parfois, l'autocomplétion ne parvenait pas à déduire le mode de paiement.
+	Parfois, quand une opération avait des sous-opérations, un complément de montant nul apparaissait dans la table des opérations.
+
+version	0.5.4 (08/02/2010)
+improvement
+	Traduction en portugais (Merci à Marco).
+	Ajout d'une auto-complétion dans le dialogue de création d'une opération. Celui-ci complète les descriptions possibles au fur et à mesure de la saisie et en déduit la catégorie et le mode de paiement.
+fix
+	Correction d'un bug entrainant la suppression du fichier de données lors de la sauvegarde sur certaines configurations Linux.
+
+version	0.5.3 (25/01/2010)
+improvement
+	Traduction en portugais du convertisseur de devises (Merci à Marco).
+	Ajout de la possibilité de masquer les colonnes dans la tables des opérations.
+fix
+	Correction de nombreuses erreurs dans la version anglaise (Merci à Sharada)
+
+version	0.5.2 (21/01/2010)
+improvement
+	Ajout de la possibilité d'éditer les modes de paiement.
+
+version	0.5.1 (17/01/2010)
+improvement
+	Support de l'impression de la liste des opérations.
+	Ajout d'un bouton dans la table des opérations pour afficher/masquer toutes les sous-opérations.
+
+version	0.5.0 (10/01/2010)
+improvement
+	Ajout d'un vue budgetaire (Il semble que certains utilisateurs la veulent vraiment).
+	Ajout d'un panneau de préférénces permettant de configurer la couleur du rapport des soldes (des utilisateurs ont rapporté que les soldes positifs étaient quasiment illisibles).
+fix
+	Parfois, dans le panneau statistiques, certaines opérations étaient prises en compte alors qu'elles auraient du être rejetées par le filtre.
+
+version	0.4.0 (03/01/2010)
+improvement
+	Ajout de capacités de filtrage complètes des opérations (sur les catégories, les modes, etc ...).
+fix
+	Correction de nombreuses erreurs de traduction dans la version anglaise.
+	Parfois, la prochaine échéance d'une opération périodique n'était pas mise à jour lors de la génération des opérations périodiques.
+	L'outil de conversion des devises ne fonctionnait pas sous Ubuntu (et probablement sous d'autres OS Linux).
+	L'outil de conversion des devises était très, très, très lent quand la banque centrale européenne n'avait pas mis à jour ses taux depuis plus de 24h (comme au jour de l'an, par exemple).
+	Parfois, le changement de compte d'une transaction ne fonctionnait pas.
+
+version	0.3.7 (05/12/2009)
+improvement
+	Les dates peuvent à présent être sélectionnées dans un calendrier.
+
+version	0.3.6 (22/11/2009)
+fix
+	Dans le dialogue d'édition des opérations périodiques, il était impossible de laisser la date de fin vide une fois ce champ sélectionné.
+
+version	0.3.5 (20/11/2009)
+fix
+	La sauvegarde ne fonctionnait pas quand une opération périodique journalière était définie.
+improvement
+	Les opérations périodiques peuvent maintenant avoir une date de fin.
+
+version	0.3.4 (11/11/2009)
+fix
+	Sur certains windows XP, les préférences et le dernier état n'étaient pas sauvés
+
+version	0.3.3 (02/11/2009)
+fix
+	Quand un nouveau fichier était ouvert, la liste des catégories n'était pas raffraichie dans le panneau d'administration.
+	Parfois, lorsque la table des opérations était triée, et qu'on éditait une opération, la table se retrouvait dans un état étrange : Les modifications n'étaient plus prises en compte et la table ne répondait plus aux événements.
+
+version	0.3.2 (01/11/2009)
+improvement
+	Le titre de la fenêtre principale indique à présent que des modifications ont étés apportées depuis la dernière sauvegarde (le titre se termine alors par une étoile).
+fix
+	Supprimer une catégorie utilisait dans une opération corrompait les données.
+	Quand la lecture du dernier fichier ouvert échouait, ce fichier était toujours considéré comme le dernier fichier ouvert. 
+	Si, après avoir lu un fichier, on créait un nouveau fichier, puis qu'on redémarrait Yapbam, le fichier était de nouveau ouvert
+
+version	0.3.1 (31/10/2009)
+improvement
+	L'outil de conversion des devises fonctionne à présent avec les connexions Internet par proxy et affiche à présent une table de conversion des devises.
+fix
+	Quand l'outil de conversion des devises avait été appelé, fermer la fenêtre principale n'arrêtait pas la machine virtuelle java. 
+	Les pourcentages affichés dans les bulles d'aide du camembert des dépenses nettes étaient faux.
+	Parfois, quand une opération était dupliquée ou transformée en opération périodique, l'opération créée avait un mode de paiement erroné.
+	L'historique du solde était décalé d'un jour quand il y avait un passage heure d'été à heure d'hiver dans son scope.
+
+version	0.3.0 (25/10/2009)
+improvement
+	Ajout d'un panneau de statistiques sur les catégories.
+	Ajout d'un outil de conversion de devises (en version expérimentale : ne fonctionne pas avec les connexions Internet par proxy).
+	Change l'apparence du panneau d'administration.
+fix
+	L'item de menu "convertir en opération périodique" restaient valide quand on quittait le panneau "opérations"
+
+version	0.2.9 (24/10/2009)
+improvement
+	Développeurs : Réécriture du filtrage des opérations pour préparer l'arrivée du plugin "statistiques".
+fix
+	Quand des opérations étaient supprimées, l'historique du solde pouvait contenir des segments surnuméraires (typiquement lorsqu'on supprimait toutes les opérations.
+
+version	0.2.8 (18/10/2009)
+improvement
+	Ajout d'un panneau d'administration des modes de paiement permettant l'ajout et la suppression de modes.
+fix
+	Lorsqu'une catégorie était supprimée, elle n'était parfois pas retirée de toutes les opérations.
+
+version	0.2.7 (16/10/2009)
+improvement
+	Au premier démarrage, Yapbam demande l'autorisation de se connecter pour rechercher automatiquement des mises à jour.
+fix
+	Un double-clic sur la liste des opérations en mode "pointage" ouvrait le dialogue d'édition de l'opération au lieu de la marquer "pointée".
+
+version	0.2.6 (13/10/2009)
+improvement
+	Ajout d'un panneau d'administration pour gérer les catégories.
+	Un champ date laissé à vide est à présent équivalent à "aujourd'hui".
+	Lors de la duplication d'une opération, la date de l'opération crée est automatiquement mise à aujourd'hui dans le dialogue de création.
+fix
+	Le popup menu dans l'écran d'administration des comptes comportait de nombreux séparateurs.
+	Dans l'écran d'administration, on contrôle à présent que le nouveau nom n'est ni vide, ni déjà utilisé.
+	Quand on pressait la touche "Entrée" lors de l'édition d'une date d'opération, la date de valeur n'était pas mise à jour.
+	L'état des cases à cocher "ignorée" était inversé dans le dialogue "Générer les opérations périodiques".
+
+version	0.2.5 (10/10/2009)
+improvement
+	Ajout de la possibilité de gérer les comptes (changer leur nom et le solde initial).
+
+version	0.2.4 (02/10/2009)
+fix
+	Sous Linux, quand Yapbam était démarré avec un clic droit sur le fichier jar, les fichiers de préférences et d'état étaient sauvegardés dans le répertoire de l'utilisateur (home directory) et pas dans le répertoire de Yapbam. Du coup, Yabam n'était pas tout à fait portable.
+
+version	0.2.3 (01/10/2009)
+improvement
+	Ajout de la possibilité d'éditer ou d'ignorer les opérations générées par "Générer les opérations périodiques".
+	Ajout de la possibilité de trier la table des opérations et celle des opérations périodiques.
+
+version	0.2.2 (30/09/2009)
+improvement
+	Ajout de la recherche automatique des mises à jour de Yapbam.
+	Le menu "Opérations" reste maintenant visible dans tous les onglet.
+
+version	0.2.1 (28/09/2009)
+improvement
+	Ajout d'un popup menu pour éditer/supprimer/dupliquer les opérations périodiques dans le panneau d'administration.
+fix
+	Dans le menu contextuel de la table des transactions, l'item pour pointer l'opération sélectionnée étaient présent même quand le champ "Relevé" était vide.
+
+version	0.2.0 (27/09/2009)
+improvement
+	Ajout de la génération des opérations périodiques. Cette fonctionnalité sera bientôt améliorée par la possibilité d'éditer les opérations générées à l'intérieur même du dialogue de génération.
+	Ajout d'item de menu permettant de convertir une opération en opération périodique.
+
+version	0.1.20 (24/09/2009)
+fix
+	Lorsque, dans le dialogue de création/édition d'opération on créait un mode, compte ou une catégorie avec un nom plus long que la taille de la comboBox, l'apparence de la fenêtre était ... détruite.
+	Le bouton "dupliquer" du dialogue de création de compte n'avait pas de libellé et ne faisait rien.
+	Beaucoup de problèmes dans les boutons de la liste des modes de paiement du dialogue de création de compte.
+
+version	0.1.19 (23/09/2009)
+improvement
+	Ajout d'un panneau d'administration permettant la définition et la gestion d'opérations périodiques.
+	Ajout de bulles d'aide sur les onglets de la fenêtre principale.
+	Changement du comportement du bouton "Dupliquer" du tableau des opérations. A présent, le dialogue d'édition de l'opération est automatiquement ouvert.
+
+version	0.1.18 (18/09/2009)
+fix
+	Correction de divers bugs mineurs dans le raffraichissement des menus. Certains menus étaient désactivés (ou activés) à tort.
+improvement
+	Ajout de quelques bulles d'aide.
+	Ajout d'un dialogue d'alerte quand Yapbam est lancé avec une ancienne et incompatible version de java (avant 1.6).
+
+version	0.1.17 (18/09/2009)
+fix
+	L'authentification sur le serveur mandataire (proxy) ne fonctionnait pas.
+	Quand un compte était créé, le menu "filtre" devenait parfois incohérent.
+improvement
+	Dans le menu contextuel de la table des transactions, ajout d'un item pour pointer l'opération sélectionnée.
+	Développeurs : Passage à une architecture de plugins pour tous les panneaux de la fenêtre principale.
+
+version	0.1.16 (17/09/2009)
+improvement
+	Ajout du support des connexions Internet via un proxy.
+	Ajout d'un menu contextuel sur la liste des transactions.
+fix
+	Un double clic sur le bouton droit de la souris (ou le central) éditait l'opération sélectionnée (et pas forcément celle ou avait lieu le clic). A présent, les double clics droit sont ignorés.
+
+version	0.1.15 (14/09/2009)
+fix
+	Correction du <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2858596&amp;group_id=276272&amp;atid=1173518">bug 2858596</a> "Après certains changements dans les préférences, les mises à jour des opérations ne sont plus répercutées dans la fenêtre des opérations".
+improvement
+	Ajout d'un hack pour supporter les connexions via un proxy (nécessite d'éditer le fichier des préférences à la main).
+
+version	0.1.14 (13/09/2009)
+fix
+	Lorsque la localisation était modifiée dans les préférences, les dates dans la table des opérations continuaient à être affichées sous le format de la localisation d'origine.
+improvement
+	Ajout d'un nouvel item de menu permettant de vérifier les mises à jour.
+
+version	0.1.13 (11/09/2009)
+improvement
+	Beaucoup de travail souterrain pour préparer l'implémentation de la gestion des comptes, des catégories, etc ...
+	Le dialogue de création de comptes permet à présent également de créer des modes de paiement.
+	Amélioration du tri de la liste des opérations (dans les précédentes versions, une opération dupliquée pouvait apparaitre très loin de son original).
+	Amélioration de la sauvegarde du dernier état :<ul><li>Attention : Dans le but de préparer une architecture de plug-in, le format du fichier dans lequel on sauvegarde le dernier état a changé. Lors du passage à cette version, la taille des colonnes sauvegardées dans la version précédente sera perdue.</li><li>L'ordre des colonnes de la table des transactions est sauvegardé (dans les versions précédentes, les colonnes étaient systématiquement remises dans l'odre par défaut. La taille mémorisée était appliquée aux colonnes dans l'ordre par défaut ... ce qui peut-être considéré comme un bug).</li><li>Le défilement de la table des transactions est à présent sauvegardé.</li></ul>
+fix
+	Correction du <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2852451&amp;group_id=276272&amp;atid=1173518">bug 2856006</a> "Le bouton annuler du dialogue 'Des modifications n'ont pas été sauvegardées' ne fonctionne pas".
+	Correction du <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2856394&amp;group_id=276272&amp;atid=1173518">bug 2856394</a> "Les soldes disparaissent lors de rechargement de l'interface après un changement de préférence".
+	Quand la première colonne de la table des opérations (la zone qui permet de déployer/replier la vue des sous-opérations) était déplacée, ce contrôle restait effectué par la première colonne de la table.
+
+version	0.1.12 (07/09/2009)
+improvement
+	Ajout d'un item "Préférences" dans le menu "Fichiers", possibilité de choisir la langue et le look and feel de l'application.
+
+version	0.1.11 (05/09/2009)
+improvement
+	Traduction anglaise complète.
+fix
+	Correction du <a href="https://sourceforge.net/tracker/?func=detail&amp;aid=2852451&amp;group_id=276272&amp;atid=1173518">bug 2852451</a> "Pas de différence entre les titres des dialogues de création et de modification".
+
+version	0.1.10 (04/09/2009)
+improvement
+	Amélioration du dialogue (A propos ...).
+
+version	0.1.09 (01/09/2009)
+improvement
+	Première version publiée.

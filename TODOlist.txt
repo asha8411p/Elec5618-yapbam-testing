@@ -1,0 +1,24 @@
+Traductions des libellés autour des filtres prédéfinis.
+
+Bug :
+	Sélectionner une date incorrecte dans l'édition du Filtre puis sélectionner "toutes les dates" laisse le bouton "Ok" désactivé.
+	Diminuer le nombre de plugins avec onglet fait planter la restauration.
+	Changer la font size et le thème ne marche pas (la font size est ignorée).
+	Finir le "ignore end date" (mettre en pointillé ce qui dépasse de la date de fin dans le graphique).
+
+Question à cent sous :
+Depuis la 0.12.0 on ne peut plus créer d'opération périodique inactive sans périodicité, bug ou feature ?
+
+Code cleaning :
+Utiliser le framework AJLib pour créer l'application.
+
+Features :
+* Pouvoir choisir l'encoding dans l'import/export 
+* Permettre la consultation des relnotes dans le dialogue affiché lors de la détection d'une mise à jour (cf net.yapbam.update.CheckUpdateDialog#UpdateSwingWorker#done).
+* Tenir compte de la date de fin sélectionnée dans le filtre pour régler le zoom vertical dans le graphique de l'historique du solde
+  (pour l'instant, cette échelle est fixée par rapport à la date de fin de l'historique de solde non filtré).
+* Ajout de moyennes dans la vue budgetaire ?
+* La possibilité d'ignorer les alertes trop lointaines. 
+* La possibilité de supprimer ou d'éditer plusieurs opérations à la fois.
+* La possibilité de définir un budget cible et de le comparer à la dure réalité ;-)
+* Peut-être la prise en charge des fichiers au format OFX (issus de Money ou de votre banque) ... ça dépendra du nombre de demandes.
